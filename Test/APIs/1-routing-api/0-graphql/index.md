@@ -12,23 +12,23 @@ There are many. You can read [how Facebook sees it](https://facebook.github.io/r
 
 ## GraphQL API regions
 
-1. Helsinki region API is available at:
+**1. Helsinki region API is available at:**
 > https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql
 
-2. API for the Waltti regions is available at:
+**2. API for the Waltti regions is available at:**
 > https://api.digitransit.fi/routing/v1/routers/waltti/index/graphql
 
-3. Whole Finland API is available at:
+**3. Whole Finland API is available at:**
 > https://api.digitransit.fi/routing/v1/routers/finland/index/graphql
 
 ## API requirements
 
 When sending queries, there are some things you should be aware of:
 
-1. HTTP method must be POST
+**1. HTTP method must be POST**
 - You will get HTTP 405 error when using other methods.
 
-2. Content-Type must be either "application/graphql" or "application/json"
+**2. Content-Type must be either "application/graphql" or "application/json"**
 - You will get HTTP 415 Error if it is not present.
 
 ## cURL examples
@@ -38,7 +38,7 @@ Examples below send a GraphQL query as HTTP post to https://api.digitransit.fi/r
 You can download cURL here:
 > https://curl.haxx.se/
 
-1. Linux & OSX
+**1. Linux & OSX**
 
 When using **application/graphql** Content-Type, do it like this:
 ```
@@ -79,7 +79,7 @@ Some description for cURL parameters:
 - -d @- tells cURL to read post data from STDIN
 - << DATA defines [here documents code block](http://www.tldp.org/LDP/abs/html/here-docs.html)
 
-2. Windows
+**2. Windows**
 
 If you are a Windows user, you can use **application/graphql** approach like so:
 ```
