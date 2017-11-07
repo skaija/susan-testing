@@ -13,14 +13,13 @@ There are many. You can read [how Facebook sees it](https://facebook.github.io/r
 ## GraphQL API regions
 
 **1. Helsinki region API is available at:**
-> https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql
 > https://<i></i>api.digitransit.fi/routing/v1/routers/hsl/index/graphql
 
 **2. API for the Waltti regions is available at:**
-> https://api.digitransit.fi/routing/v1/routers/waltti/index/graphql
+> https://<i></i>api.digitransit.fi/routing/v1/routers/waltti/index/graphql
 
 **3. Whole Finland API is available at:**
-> https://api.digitransit.fi/routing/v1/routers/finland/index/graphql
+> https://<i></i>api.digitransit.fi/routing/v1/routers/finland/index/graphql
 
 ## API requirements
 
@@ -34,7 +33,7 @@ When sending queries, there are some things you should be aware of:
 
 ## cURL examples
 
-Examples below send a GraphQL query as HTTP post to https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql. Example query asks server to find stop using id "HSL:1040129" and return its name, latitude and longitude coordinates, and whether is is accessible by wheelchair.
+Examples below send a GraphQL query as HTTP post to https://<i></i>api.digitransit.fi/routing/v1/routers/hsl/index/graphql. Example query asks server to find stop using id "HSL:1040129" and return its name, latitude and longitude coordinates, and whether is is accessible by wheelchair.
 
 You can download cURL here:
 > https://curl.haxx.se/
