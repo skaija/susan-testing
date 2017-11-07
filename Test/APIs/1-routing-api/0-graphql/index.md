@@ -14,6 +14,7 @@ There are many. You can read [how Facebook sees it](https://facebook.github.io/r
 
 **1. Helsinki region API is available at:**
 > https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql
+> https://<i></i>api.digitransit.fi/routing/v1/routers/hsl/index/graphql
 
 **2. API for the Waltti regions is available at:**
 > https://api.digitransit.fi/routing/v1/routers/waltti/index/graphql
