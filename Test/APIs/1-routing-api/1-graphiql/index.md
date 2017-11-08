@@ -70,17 +70,17 @@ The browser version already has correct endpoint configured
 
 GraphiQL is schema aware. This means that you can invoke autocomplete by Ctrl-space. Tool then shows available options for query.
 
-![GraphiQL](./GraphiQL-autocomplete.png)
+![GraphiQL](./2GraphiQL-autocomplete.PNG)
 
 ## Reading schema docs
 
 By clicking "< docs" from upper right corner, you open documentation explorer. From there click on "query: QueryType" opens all top level queries available.
 
-![GraphiQL](./GraphiQL-docs.png)
+![GraphiQL](./3GraphiQL-docs.PNG)
 
 From here we can check e.g. "alerts", which describes what can be queried using that top level. It says "Get all alerts active in the graph".
 
-![GraphiQL](./GraphiQL-alerts.png)
+![GraphiQL](./4GraphiQL-alerts.PNG)
 
 Let's try to query that:
 
@@ -100,7 +100,7 @@ Let's try to query that:
 
 Depending on current situation you might get some disruption info
 
-![GraphiQL](./GraphiQL-alerts-results.png)
+![GraphiQL](./5GraphiQL-alerts-results.PNG)
 
 All top level queris should have at least some description available, use documentation browser to familiarize yourself with the schema.
 
