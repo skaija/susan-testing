@@ -25,7 +25,7 @@ Finland version:
 
 All options work similarly and UI looks more or less like this:
 
-![GraphiQL](./GraphiQL.png)
+![GraphiQL](./1GraphiQL.PNG)
 
 ## Execute your first query
 
