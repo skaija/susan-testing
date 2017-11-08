@@ -23,7 +23,7 @@ Finland version:
 
 3) For Mac OSX you can use desktop version: [GraphiQL app](https://github.com/skevy/graphiql-app)
 
-All options work similarly and UI looks more or less like this:
+All options work similarly and UI looks more or less like this (ChromeiQL extension):
 
 ![GraphiQL](./1GraphiQL.PNG)
 
