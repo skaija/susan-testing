@@ -5,7 +5,7 @@ title: GraphiQL
 
 **It is highly recommended to use GraphiQL.**
 
-[GraphiQL](https://github.com/graphql/graphiql) is a simple UI for making queries. Not only can you use it run queries but also for exploring GraphQL schema. 
+[GraphiQL](https://github.com/graphql/graphiql) is a simple UI for making queries. Not only can you use it for running queries but also for exploring GraphQL schema. 
 
 There are a few options for using GraphiQL:
 
