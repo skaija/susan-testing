@@ -25,7 +25,7 @@ Finland version:
 
 All options work similarly and UI looks more or less like this (ChromeiQL extension has been used in the example below):
 
-![GraphiQL](./01GraphiQL.PNG)
+![GraphiQL](./01GraphiQL.png)
 
 ## Execute your first query
 
