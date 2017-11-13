@@ -4,7 +4,6 @@
 
 ```
 [{
-
 routes(name: "58", modes: "BUS") {
     id
     agency {
