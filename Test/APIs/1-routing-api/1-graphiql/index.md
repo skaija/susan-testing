@@ -9,18 +9,18 @@ title: GraphiQL
 
 **Note:** All top level queris should have at least some description available and you can use documentation browser to familiarize yourself with the schema.
 
-There are a few options for using GraphiQL:
+#There are a few options for using GraphiQL:
 
 1) A browser extension like ChromeiQL (https://chrome.google.com/webstore/detail/chromeiql/fkkiamalmpiidkljmicmjfbieiclmeij)
 2) Using browser versions for the three regions available:
 
-Helsinki region:
+**Helsinki region:**
 > https://api.digitransit.fi/graphiql/hsl
 
-Waltti regions:
+**Waltti regions:**
 > https://api.digitransit.fi/graphiql/waltti
 
-Finland version:
+**Finland version:**
 > https://api.digitransit.fi/graphiql/finland
 
 The browser versions have the correct endpoint configured already.
@@ -33,7 +33,7 @@ All options work similarly and UI looks more or less like this (ChromeiQL extens
 
 ## Execute your first query
 
-1. If you are using GraphiQL app or browser extension, set "GraphQL Endpoint" to one of:
+1. If you are using GraphiQL app or browser extension, set "GraphQL Endpoint" to one of the following:
 - Helsinki region: http://<i></i>api.digitransit.fi/routing/v1/routers/hsl/index/graphql
 - Waltti regions: http://<i></i>api.digitransit.fi/routing/v1/routers/waltti/index/graphql
 - Finland: http://<i></i>api.digitransit.fi/routing/v1/routers/finland/index/graphql
@@ -98,7 +98,6 @@ Let's try to query that:
 ```
 
 3. Press "play" to execute your query
-
 
 Depending on current situation you might get some disruption info
 
