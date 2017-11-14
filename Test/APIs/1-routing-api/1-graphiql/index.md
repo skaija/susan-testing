@@ -67,6 +67,7 @@ All options work similarly and UI looks more or less like this (ChromeiQL extens
   }
 }
 ```
+**Note:** If the example provided does not return the expected results then the id used in step 2 may not be in use any more and you should just try to use some other id.
 
 ## Exploring schema with GraphiQL
 
