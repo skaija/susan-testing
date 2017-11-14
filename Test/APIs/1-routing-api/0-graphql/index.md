@@ -87,6 +87,7 @@ If you are a Windows user, you can use **application/graphql** approach like so:
 ```
 curl https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql -H "Content-Type: application/graphql" --data "{stop(id: \"HSL:1173210\") {name, lat, lon, wheelchairBoarding}}"
 ```
+**Note:**  If the examples provided do not return what is expected then the id used may not be in use any more and you should just try to use some other id.
 
 **Differences between application/json and application/graphql approaches**
 
