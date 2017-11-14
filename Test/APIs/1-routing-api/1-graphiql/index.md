@@ -29,7 +29,7 @@ The browser versions have the correct endpoint configured already.
 
 All options work similarly and UI looks more or less like this (ChromeiQL extension has been used in the example below):
 
-![GraphiQL](./01GraphiQL.png)
+![GraphiQL](./GraphiQL.png)
 
 ## Execute your first query
 
@@ -72,17 +72,17 @@ All options work similarly and UI looks more or less like this (ChromeiQL extens
 
 GraphiQL is schema aware. This means that you can invoke autocomplete by Ctrl-space. Tool then shows available options for query.
 
-![GraphiQL](./2GraphiQL-autocomplete.PNG)
+![GraphiQL](./GraphiQL-autocomplete.png)
 
 ## Reading schema docs
 
 By clicking "< docs" from upper right corner, you open documentation explorer. From there click on "query: QueryType" opens all top level queries available.
 
-![GraphiQL](./3GraphiQL-docs.PNG)
+![GraphiQL](./GraphiQL-docs.png)
 
 From here we can check e.g. "alerts", which describes what can be queried using that top level. It says "Get all alerts active in the graph".
 
-![GraphiQL](./4GraphiQL-alerts.PNG)
+![GraphiQL](./GraphiQL-alerts.png)
 
 Let's try to query that:
 
@@ -101,4 +101,4 @@ Let's try to query that:
 
 Depending on current situation you might get some disruption info
 
-![GraphiQL](./5GraphiQL-alerts-results.PNG)
+![GraphiQL](./GraphiQL-alerts-results.png)
