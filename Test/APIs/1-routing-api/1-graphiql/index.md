@@ -9,7 +9,7 @@ title: GraphiQL
 
 **Note:** All top level queris should have at least some description available and you can use documentation browser to familiarize yourself with the schema.
 
-#There are a few options for using GraphiQL:
+# There are a few options for using GraphiQL:
 
 1) A browser extension like ChromeiQL (https://chrome.google.com/webstore/detail/chromeiql/fkkiamalmpiidkljmicmjfbieiclmeij)
 2) Using browser versions for the three regions available:
