@@ -22,6 +22,8 @@ Routing API provides three types of queries you can run related to bicycling:
 
 ![citybikes](./citybikes.png)
 
+## Query examples related to bike stations, bikes and bike parks
+
 ### All available city bike stations
 
 Click [this link]() to run the query below in GraphiQL. It should fetch all available city bike stations
@@ -111,7 +113,7 @@ Click [this link]() to run the query below in GraphiQL. It should fetch route fr
 }
 ```
 
-## Riding your personal bike
+## Query example related to riding your personal bike
 
 ### Query Bicycle route from Kamppi to Pisa
 
