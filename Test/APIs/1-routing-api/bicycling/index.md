@@ -10,7 +10,7 @@ Routing API provides three types of queries you can run related to bicycling:
 
 -	City bike rental stations and bikes that are available in Helsinki
 -	City bike parks that are available in Helsinki
--	Bicycling routes for your personal bike
+-	Bicycling routes using city bike or your personal bike
 
 ## City bikes
 
@@ -22,11 +22,11 @@ Routing API provides three types of queries you can run related to bicycling:
 
 ![citybikes](./citybikes.png)
 
-## Query examples related to bike stations, bikes and bike parks
+## Query examples 
 
 ### All available city bike stations
 
-Click [this link]() to run the query below in GraphiQL. It should fetch all available city bike stations
+Click [this link]() to run the query below in GraphiQL. It should fetch all available city bike stations.
 
 ```
 {
@@ -39,7 +39,7 @@ Click [this link]() to run the query below in GraphiQL. It should fetch all avai
 
 ### City bike station and its current bike availability details
 
-Click [this link]() to run the query below in GraphiQL. It should fetch city bike station, and its current bike availability details
+Click [this link]() to run the query below in GraphiQL. It should fetch city bike station, and its current bike availability details.
 
 ```
 {
@@ -53,6 +53,38 @@ Click [this link]() to run the query below in GraphiQL. It should fetch city bik
     allowDropoff
   }
 }
+```
+
+### All available city bike parks
+
+Click [this link]() to run the query below in GraphiQL. It should fetch all available city bike parks.
+
+```
+{
+  bikeParks{
+    id
+    bikeParkId
+    name
+    spacesAvailable
+  }
+}
+```
+
+### Available city bike park
+
+
+```
+{
+  bikePark(id:"906") {
+    id
+    bikeParkId
+    name
+    spacesAvailable
+    lat
+    lon
+  }
+}
+
 ```
 
 ### Route from Kamppi to Kasarmitori using city bike rental
@@ -113,9 +145,7 @@ Click [this link]() to run the query below in GraphiQL. It should fetch route fr
 }
 ```
 
-## Query example related to riding your personal bike
-
-### Query Bicycle route from Kamppi to Pisa
+### Query Bicycle route from Kamppi to Pisa riding your personal bike
 
 Click [this link]() to run the query below in GraphiQL. It should fetch bicycle route from Kamppi to Pisa.
 
