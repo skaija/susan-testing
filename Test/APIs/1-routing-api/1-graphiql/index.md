@@ -38,7 +38,7 @@ All options work similarly and UI looks more or less like this (ChromeiQL extens
 - Waltti regions: http://<i></i>api.digitransit.fi/routing/v1/routers/waltti/index/graphql
 - Finland: http://<i></i>api.digitransit.fi/routing/v1/routers/finland/index/graphql
 
-2. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20stop(id%3A%20%22HSL%3A1040129%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20lat%0A%20%20%20%20lon%0A%20%20%20%20wheelchairBoarding%0A%20%20%7D%0A%7D) to run the query below in GraphiQL
+2. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20stop(id%3A%20%22HSL%3A1040129%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20lat%0A%20%20%20%20lon%0A%20%20%20%20wheelchairBoarding%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
 
 ```
 {
@@ -51,7 +51,7 @@ All options work similarly and UI looks more or less like this (ChromeiQL extens
 }
 ```
 
-3. Press play in GraphiQL to execute the query
+3. Press play in GraphiQL to execute the query.
 
 4. You should get results like below:
 
@@ -77,19 +77,19 @@ GraphiQL is schema aware. This means that you can invoke autocomplete by Ctrl-sp
 
 ## Reading schema docs
 
-By clicking "< docs" from upper right corner, you open documentation explorer. From there click on "query: QueryType" opens all top level queries available.
+By clicking **"< docs"** on the upper right corner in GraphiQL, you can open **Documentation Explorer**. Click on **"query: QueryType"** there will open all top level queries available.
 
 ![GraphiQL](./GraphiQL-docs.png)
 
-From here we can check e.g. "alerts", which describes what can be queried using that top level. It says "Get all alerts active in the graph".
+From here you can check e.g. "alerts", which describes what can be queried using that top level. It says "Get all alerts active in the graph".
 
 ![GraphiQL](./GraphiQL-alerts.png)
 
-Let's try to query that:
+Let's try to query alerts:
 
 1. Close docs
 
-2. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20alerts%20%7B%0A%20%20%20%20alertDescriptionText%0A%20%20%7D%0A%7D) to run the query below in GraphiQL
+2. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20alerts%20%7B%0A%20%20%20%20alertDescriptionText%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
  
 ```
 {
