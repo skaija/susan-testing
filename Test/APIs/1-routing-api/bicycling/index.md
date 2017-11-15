@@ -15,6 +15,7 @@ Routing API provides three types of queries you can run related to bicycling:
 ## City bikes
 
 **Note:** City bikes are only available in Helsinki.
+
 **Note:** City bike API data is realtime and it is always up to date.
 
 > https://www.hsl.fi/en/citybikes
