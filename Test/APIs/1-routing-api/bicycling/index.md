@@ -2,13 +2,13 @@
 title: Bicycling
 ---
 
-If you haven't read getting started, [check that out first](../1-getting-started/).
+If you are not familiar with [GrpahQL](../0-graphql) and [GraphiQL](../1-graphiql) yet please review those pages at first.
 
 ## Two types of bicycling
 
-Digitransit platform has APIs to query
+Digitransit platform has APIs to query:
 - bicycling routes for your personal bike
-- city bikes that are available in Helsinki.
+- city bikes that are available in Helsinki
 
 ## City bikes
 
