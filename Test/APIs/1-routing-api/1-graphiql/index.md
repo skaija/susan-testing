@@ -29,7 +29,7 @@ The browser versions have the correct endpoint configured already.
 
 All options work similarly and UI looks more or less like this (ChromeiQL extension has been used in the example below):
 
-![GraphiQL](./GraphiQL.png)
+![Kuva](./GraphiQL.png)
 
 ## Execute your first query
 
