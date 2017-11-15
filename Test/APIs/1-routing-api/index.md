@@ -4,6 +4,8 @@ title: Routing API
 Routing API provides a way to plan itineraries and query public transportation related
 information about stops and timetables.
 
+## Getting started
+
 At first you should read our [GraphQL](./0-graphql/) and [GraphiQL](./1-graphiql/) pages and try out the examples provided.
 
 You should also get familiar with our ["realtime arrival prediction"](./2-realtime-arrival-prediction/) before going any further.
