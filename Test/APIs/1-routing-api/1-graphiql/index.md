@@ -38,7 +38,7 @@ All options work similarly and UI looks more or less like this (ChromeiQL extens
 - Waltti regions: http://<i></i>api.digitransit.fi/routing/v1/routers/waltti/index/graphql
 - Finland: http://<i></i>api.digitransit.fi/routing/v1/routers/finland/index/graphql
 
-2. Copy this as query:
+2. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20stop(id%3A%20%22HSL%3A1040129%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20lat%0A%20%20%20%20lon%0A%20%20%20%20wheelchairBoarding%0A%20%20%7D%0A%7D) to run the query below in GraphiQL
 
 ```
 {
@@ -51,9 +51,9 @@ All options work similarly and UI looks more or less like this (ChromeiQL extens
 }
 ```
 
-4. Press play to execute query
+3. Press play in GraphiQL to execute the query
 
-5. You should get result:
+4. You should get results like below:
 
 ```
 {
@@ -89,7 +89,8 @@ Let's try to query that:
 
 1. Close docs
 
-2. Enter query
+2. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20alerts%20%7B%0A%20%20%20%20alertDescriptionText%0A%20%20%7D%0A%7Dquery) to run the query below in GraphiQL
+ 
 ```
 {
   alerts {
@@ -98,7 +99,7 @@ Let's try to query that:
 }
 ```
 
-3. Press "play" to execute your query
+3. Press play in GraphiQL to execute the query
 
 Depending on current situation you might get some disruption info
 
