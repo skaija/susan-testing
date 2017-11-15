@@ -4,24 +4,27 @@ title: Bicycling
 
 If you are not familiar with [GrpahQL](../0-graphql) and [GraphiQL](../1-graphiql) yet please review those pages at first.
 
-## Two types of bicycling
+## Bicycling related query types
 
-Digitransit platform has APIs to query:
-- bicycling routes for your personal bike
-- city bikes that are available in Helsinki
+Routing API provides four types of queries you can run related to bicycling:
+
+•	City bike rental stations that are available in Helsinki
+•	City bike parks that are available in Helsinki
+•	City bikes that are available in Helsinki
+•	Bicycling routes for your personal bike
 
 ## City bikes
 
-**NOTE!** citybikes are only available in Helsinki.
-
-**NOTE!** citybike API data is realtime and it is always up to date.
+**Note:** City bikes are only available in Helsinki.
+**Note:** City bike API data is realtime and it is always up to date.
 
 > https://www.hsl.fi/en/citybikes
 
 ![citybikes](./citybikes.png)
 
+### All available city bike stations
 
-### Fetch all available city bike stations
+Click [this link]() to run the query below in GraphiQL. It should fetch all available city bike stations
 
 ```
 {
@@ -32,7 +35,9 @@ Digitransit platform has APIs to query:
 }
 ```
 
-### Fetch city bike station, and its current bike availability details
+### City bike station and its current bike availability details
+
+Click [this link]() to run the query below in GraphiQL. It should fetch city bike station, and its current bike availability details
 
 ```
 {
@@ -50,8 +55,9 @@ Digitransit platform has APIs to query:
 
 ### Route from Kamppi to Kasarmitori using city bike rental
 
-- also show rental stations
-- note use of mode `BICYCLE_RENT`, which is not returned as mode
+Click [this link]() to run the query below in GraphiQL. It should fetch route from Kamppi to Kasarmitori using city bike rental and show also rental stations.
+
+**Note:** Use of mode BICYCLE_RENT, which is not returned as mode
 
 ```
 {
@@ -109,7 +115,9 @@ Digitransit platform has APIs to query:
 
 ### Query Bicycle route from Kamppi to Pisa
 
-- note maxWalkDistance is used for cycling too
+Click [this link]() to run the query below in GraphiQL. It should fetch bicycle route from Kamppi to Pisa.
+
+**Note:** maxWalkDistance is used for cycling too
 
 ```
 {
