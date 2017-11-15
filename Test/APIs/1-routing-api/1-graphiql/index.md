@@ -7,7 +7,7 @@ title: GraphiQL
 
 [GraphiQL](https://github.com/graphql/graphiql) is a simple UI for making queries. Not only can you use it for running queries but also for exploring GraphQL schema. 
 
-**Note:** All top level queris should have at least some description available and you can use documentation explorer to familiarize yourself with the schema. You can find more details about that under "Reading schema docs".
+**Note:** All top level queris should have at least some description available and you can use documentation explorer to familiarize yourself with the schema. You can find more details about that under [Reading schema docs](##Reading-schema-docs).
 
 ### There are a few options for using GraphiQL:
 
