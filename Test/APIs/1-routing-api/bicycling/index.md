@@ -6,12 +6,11 @@ If you are not familiar with [GrpahQL](../0-graphql) and [GraphiQL](../1-graphiq
 
 ## Bicycling related query types
 
-Routing API provides four types of queries you can run related to bicycling:
+Routing API provides three types of queries you can run related to bicycling:
 
-•	City bike rental stations that are available in Helsinki
-•	City bike parks that are available in Helsinki
-•	City bikes that are available in Helsinki
-•	Bicycling routes for your personal bike
+-	City bike rental stations and bikes that are available in Helsinki
+-	City bike parks that are available in Helsinki
+-	Bicycling routes for your personal bike
 
 ## City bikes
 
