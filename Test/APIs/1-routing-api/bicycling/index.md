@@ -2,7 +2,7 @@
 title: Bicycling
 ---
 
-If you are not familiar with [GrpahQL](../0-graphql) and [GraphiQL](../1-graphiql) yet please review those pages at first.
+**If you are not familiar with [GrpahQL](../0-graphql) and [GraphiQL](../1-graphiql) yet it is highly recommended to review those pages at first.**
 
 ## Bicycling related query types
 
@@ -14,7 +14,7 @@ Routing API provides three types of queries you can run related to bicycling:
 
 ## City bikes
 
-**Note:** City bikes are only available in Helsinki.
+**Note:** City bikes are available in Helsinki only.
 
 **Note:** City bike API data is realtime and it is always up to date.
 
@@ -39,7 +39,7 @@ Click [this link]() to run the query below in GraphiQL. It should fetch all avai
 
 ### City bike station and its current bike availability details
 
-Click [this link]() to run the query below in GraphiQL. It should fetch city bike station, and its current bike availability details.
+Click [this link]() to run the query below in GraphiQL. It should fetch the city bike station with id B07, and its current bike availability details.
 
 ```
 {
@@ -72,6 +72,7 @@ Click [this link]() to run the query below in GraphiQL. It should fetch all avai
 
 ### Available city bike park
 
+Click [this link]() to run the query below in GraphiQL. It should fetch the city bike park with id 906 and its current space availability details.
 
 ```
 {
@@ -91,7 +92,7 @@ Click [this link]() to run the query below in GraphiQL. It should fetch all avai
 
 Click [this link]() to run the query below in GraphiQL. It should fetch route from Kamppi to Kasarmitori using city bike rental and show also rental stations.
 
-**Note:** Use of mode BICYCLE_RENT, which is not returned as mode
+**Note:** Use of mode BICYCLE_RENT, which is not returned as mode.
 
 ```
 {
