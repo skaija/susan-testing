@@ -26,7 +26,7 @@ Routing API provides three types of queries you can run related to bicycling:
 
 ### All available city bike stations
 
-Click [this link]() to run the query below in GraphiQL. It should fetch all available city bike stations.
+Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20bikeRentalStations%20%7B%0A%20%20%20%20name%0A%20%20%20%20stationId%0A%20%20%7D%0A%7D) to run the query below in GraphiQL. It should fetch all available city bike stations.
 
 ```
 {
@@ -39,11 +39,11 @@ Click [this link]() to run the query below in GraphiQL. It should fetch all avai
 
 ### City bike station and its current bike availability details
 
-Click [this link]() to run the query below in GraphiQL. It should fetch the city bike station with id B07, and its current bike availability details.
+Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20bikeRentalStation(id%3A%22070%22)%20%7B%0A%20%20%20%20stationId%0A%20%20%20%20name%0A%20%20%20%20bikesAva%0A%20%20%20%20lable%0A%20%20%20%20spacesAvailable%0A%20%20%20%20lat%0A%20%20%20%20lon%0A%20%20%20%20allowDropoff%0A%20%20%7D%0A%7D) to run the query below in GraphiQL. It should fetch the city bike station and its current bike availability details.
 
 ```
 {
-  bikeRentalStation(id:"B07") {
+  bikeRentalStation(id:"070") {
     stationId
     name
     bikesAvailable
@@ -57,7 +57,7 @@ Click [this link]() to run the query below in GraphiQL. It should fetch the city
 
 ### All available city bike parks
 
-Click [this link]() to run the query below in GraphiQL. It should fetch all available city bike parks.
+Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20bikeParks%7B%0A%20%20%20%20id%0A%20%20%20%20bikeParkId%0A%20%20%20%20name%0A%20%20%20%7D%0A%7D) to run the query below in GraphiQL. It should fetch all available city bike parks.
 
 ```
 {
@@ -65,14 +65,13 @@ Click [this link]() to run the query below in GraphiQL. It should fetch all avai
     id
     bikeParkId
     name
-    spacesAvailable
-  }
+   }
 }
 ```
 
 ### Available city bike park
 
-Click [this link]() to run the query below in GraphiQL. It should fetch the city bike park with id 906 and its current space availability details.
+Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20bikePark(id%3A%22906%22)%20%7B%0A%20%20%20%20id%0A%20%20%20%20bikeParkId%0A%20%20%20%20name%0A%20%20%20%20spacesAvailable%0A%20%20%20%20lat%0A%20%20%20%20lon%0A%20%20%7D%0A%7D) to run the query below in GraphiQL. It should fetch the city bike park and its current space availability details.
 
 ```
 {
