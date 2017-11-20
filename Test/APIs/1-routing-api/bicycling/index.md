@@ -24,6 +24,8 @@ Routing API provides five query types that can be run related to bicycling:
 
 ## Query examples 
 
+**Note:** If the examples provided with some id do not return what is expected then the id in question may not be in use any more and you should try again with an existing id.
+
 ### All available city bike stations
 
 1. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20bikeRentalStations%20%7B%0A%20%20%20%20name%0A%20%20%20%20stationId%0A%20%20%7D%0A%7D) to run the query below in GraphiQL. It should fetch all available city bike stations.
