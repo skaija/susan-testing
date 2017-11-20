@@ -1,11 +1,11 @@
 ---
 title: Disruption info
 ---
-If you haven't read getting started, [check that out first](../1-getting-started/).
+**If you are not familiar with [GrpahQL](../0-graphql) and [GraphiQL](../1-graphiql) yet it is highly recommended to review those pages at first.**
 
 ## What is disruption info?
 
-Disruption info is information about current and upcoming disruptions in public transport.
+Disruption info is information about the current and upcoming disruptions in public transport.
 
 ## Query all currently available disruption info
 ```
