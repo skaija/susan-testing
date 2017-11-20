@@ -6,11 +6,11 @@ title: Bicycling
 
 ## Bicycling related query types
 
-Routing API provides three types of queries you can run related to bicycling:
+Routing API provides five query types that can be run related to bicycling:
 
--	City bike rental stations and bikes that are available in Helsinki
--	City bike parks that are available in Helsinki
--	Bicycling routes using city bike or your personal bike
+-	City bike rental stations and bikes that are available in Helsinki (bikeRentalStations / bikeRentalStation)
+-	City bike parks that are available in Helsinki (bikeParks / bikePark)
+-	Bicycling routes using city bike or your personal bike (plan)
 
 ## City bikes
 
