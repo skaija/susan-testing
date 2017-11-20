@@ -9,6 +9,8 @@ Disruption info is information about the current and upcoming disruptions in pub
 
 ## Query examples
 
+**Note:** For more details about the query type **alerts** you can use **Documentation Explorer** provided in GraphiQL.
+
 ### Query all currently available disruption info
 
 1. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20alerts%20%7B%0A%20%20%20%20alertDescriptionText%0A%20%20%7D%0A%7D) to run the query below in GraphiQL. 
