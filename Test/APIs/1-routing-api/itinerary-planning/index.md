@@ -6,6 +6,15 @@ title: Itinerary planning
 
 ## Glossary
 
+| Term                                  | Explanation                     |
+|---------------------------------------|---------------------------------|
+| Transportation Mode (or just Mode)    | A means of transport, for example: walking, cycling, driving a car, bus, train, subway, tram, ferry, taxi, airplane.
+| Itinerary                             | A combination of different transportation modes at certain times to reach from origin to destination. For example to go from Pasila (Helsinki) to Koskikeskus (Tampere) you could walk to the train station, take the 14:00 P train to Aviapolis, walk to the airport, take the 15:00 flight to Tampere-Pirkkala and take a taxi to the final destination. Commonly used synonym: journey
+| Leg                                   | One part of an itinerary
+| Origin                                | When the context is a person; the geographical point where an itinerary begins. When the context is a route; the first stop on the route or the first location on the headsign.
+| Destination                           | When the context is a person; the geographical point where an itinerary ends. When the context is a route; the last stop on the route or the last location on the headsign.
+| Headsign                              | A description of a route usually written on the front of the vehicle. For example: “Helsinki” (for just the destination) or “Helsinki - Tampere” (for both the origin and destination).
+
 First, let's define some terms:
 
 **Transportation Mode** or just **Mode** is a means of transport, for example: walking, cycling, driving a car, bus, train, subway, tram, ferry, taxi, airplane.
