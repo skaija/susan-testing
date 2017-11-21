@@ -15,20 +15,6 @@ title: Itinerary planning
 | Destination                           | When the context is a person; the geographical point where an itinerary ends. When the context is a route; the last stop on the route or the last location on the headsign.
 | Headsign                              | A description of a route usually written on the front of the vehicle. For example: “Helsinki” (for just the destination) or “Helsinki - Tampere” (for both the origin and destination).
 
-First, let's define some terms:
-
-**Transportation Mode** or just **Mode** is a means of transport, for example: walking, cycling, driving a car, bus, train, subway, tram, ferry, taxi, airplane.
-
-**Itinerary** is a combination of different transportation modes at certain times to reach from origin to destination. For example to go from Pasila (Helsinki) to Koskikeskus (Tampere) you could walk to the train station, take the 14:00 P train to Aviapolis, walk to the airport, take the 15:00 flight to Tampere-Pirkkala, take a taxi to destination. Commonly used synonyms: journey
-
-**Leg** is one part of an itinerary.
-
-**Origin** When the context is a person; the geographical point where an itinerary begins. When the context is a route; the first stop on the route or the first location on the headsign.
-
-**destination** When the context is a person; the geographical point where an itinerary ends. When the context is a route; the last stop on the route or the last location on the headsign.
-
-**headsign** is a description of a route usually written on the front of the vehicle. For example: "Helsinki" (for just the destination) or "Helsinki - Tampere" (for both the origin and destination).
-
 ### Note about Itinerary leg geometries
 
 You can ask server to return geometries for itineraries. API will return them in [Google poline-encoded format](https://developers.google.com/maps/documentation/utilities/polylinealgorithm). It looks like this:
@@ -39,7 +25,7 @@ You can ask server to return geometries for itineraries. API will return them in
 }
 ```
 
-We can use [polyline npm module](https://www.npmjs.com/package/polyline) to get some idea how this data looks:
+You can use [polyline npm module](https://www.npmjs.com/package/polyline) to get some idea how this data looks:
 
 ```
 var polyline = require('polyline')
@@ -66,7 +52,7 @@ You can copy paste this into a tool that [plots points on map](http://www.darrin
 
 **Note:** For more details about the query type **plan** you can use **Documentation Explorer** provided in GraphiQL.
 
-**Note:** If the examples provided with some id or other value do not return what is expected then the id in question may not be in use any more and you should try again with an existing id.
+**Note:** If the examples provided with some id or other value do not return what is expected then the value in question may not be in use any more and you should try again with an existing value.
 
 ### Plan an itinerary from location (60.4,24.5) to (60.41,24.51)
 ```
