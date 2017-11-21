@@ -50,7 +50,7 @@ You can copy paste this into a tool that [plots points on map](http://www.darrin
 
 ## Query examples
 
-**Note:** For more details about the query type **plan** you can use **Documentation Explorer** provided in GraphiQL.
+**Note:** For more details about the query type **plan** and its parameters you can use **Documentation Explorer** provided in GraphiQL.
 
 **Note:** If the examples provided with some id or other value do not return what is expected then the value in question may not be in use any more and you should try again with an existing value.
 
@@ -168,10 +168,10 @@ to run the query below in GraphiQL.
 
 ### Plan an itinerary from Hakaniemi to Keilaniemi and modify parameters below:
 
-- Return five results
-- Using other than subway
-- Fast walking speed
-- Safety margin 10 minutes
+- Return five results (numItineraries: 5)
+- Using other modes than subway (modes: "BUS,TRAM,RAIL,FERRY,WALK")
+- Fast walking speed (walkSpeed: 1.7)
+- Safety margin 10 minutes (minTransferTime: 600)
 
 1. Click [this link](Ei toimi) to run the query below in GraphiQL.
 
@@ -183,7 +183,7 @@ to run the query below in GraphiQL.
     toPlace: "Keilaniemi, Espoo",
     to: {lat: 60.1762, lon: 24.836584},
     date: "2016-05-20",
-    time: "23:28:00"
+    time: "23:28:00",
     numItineraries: 5,
     modes: "BUS,TRAM,RAIL,FERRY,WALK",
     walkReluctance: 2.1,
