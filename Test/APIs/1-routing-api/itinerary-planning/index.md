@@ -2,9 +2,9 @@
 title: Itinerary planning
 ---
 
-If you haven't read getting started, [check that out first](../1-getting-started/).
+**If you are not familiar with [GraphQL](../0-graphql) and [GraphiQL](../1-graphiql) yet it is highly recommended to review those pages at first.**
 
-## Terms
+## Glossary
 
 First, let's define some terms:
 
@@ -52,6 +52,12 @@ by running this on Node.js, it prints a table like so:
 You can copy paste this into a tool that [plots points on map](http://www.darrinward.com/lat-long/?id=1974554).
 
 ![polyline](./polyline.png)
+
+## Query examples
+
+**Note:** For more details about the query type **plan** you can use **Documentation Explorer** provided in GraphiQL.
+
+**Note:** If the examples provided with some id or other value do not return what is expected then the id in question may not be in use any more and you should try again with an existing id.
 
 ### Plan an itinerary from location (60.4,24.5) to (60.41,24.51)
 ```
