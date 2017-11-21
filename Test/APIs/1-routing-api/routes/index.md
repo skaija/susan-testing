@@ -2,19 +2,24 @@
 title: Routes
 ---
 
-If you haven't read getting started, [check that out first](../1-getting-started/).
+**If you are not familiar with [GraphQL](../0-graphql) and [GraphiQL](../1-graphiql) yet it is highly recommended to review those pages at first.**
 
-## Terms
+## Glossary
 
-First, let's define some terms:
+| Term                                  | Explanation                     |
+|---------------------------------------|---------------------------------|
+| Routes                                | A public transport service shown to customers under a single name, usually from point A to B and back. For example: trams 1 and 1A, buses 18 and 102T, or train A. Commonly used synonym: line
+| Pattern                               | A sequence of stops as used by a specific direction and variant of a route. For example a tram entering/departing service from/to the depot usually joins at the middle of the route, or a route might have a short term diversion (poikkeusreitti) without changing the route name (longer diversions usually are marked as different routes).
+| Trip                                  | A specific occurance of a route, usually identified by the route and exact departure time from the first stop. For example bus 102 leaving from Otaniemi on 2017-11-21 10:00, or more generally leaving from Otaniemi at 10:00 on specified days (e.g. Monday to Friday from 2015-11-20 to 2016-11-24 excluding holidays).
 
-**Routes** are public transport service shown to customers under a single name, usually from point A to B and back. For example: trams 1 and 1A, buses 18 and 102T, or train A. Commonly used synonyms: line
+## Query examples
 
-**Pattern** is a sequence of stops as used by a specific direction and variant of a route. For example a tram entering/departing service from/to the depot usually joins at the middle of the route, or a route might have a short term diversion (poikkeusreitti) without changing the route name (longer diversions usually are marked as different routes).
+**Note:** For more details about the query type **routes** and its parameters you can use **Documentation Explorer** provided in GraphiQL.
 
-**Trip** is a specific occurance of a route, usually identified by the route and exact departure time from the first stop. For example bus 102 leaving from Otaniemi on 2015-05-01 10:00, or more generally leaving from Otaniemi at 10:00 on specified days (e.g. Monday to Friday from 2015-08-10 to 2016-05-31 excluding holidays).
+**Note:** If the examples provided with some id or other value do not return what is expected then the value in question may not be in use any more and you should try again with an existing value.
 
 ### Query all bus routes where number is like "58*"
+
 ```
 {
   routes(name: "58", modes: "BUS") {
@@ -30,6 +35,7 @@ First, let's define some terms:
 ```
 
 ### Query all tram routes where number is like "1*"
+
 ```
 {
   routes(name: "1", modes: "TRAM") {
@@ -44,7 +50,8 @@ First, let's define some terms:
 }
 ```
 
-3. Query stop names for bus number 50 for one direction
+### Query stop names for bus number 1050 for one direction
+
 ```
 {
   pattern(id:"HSL:1050:1:01") {
