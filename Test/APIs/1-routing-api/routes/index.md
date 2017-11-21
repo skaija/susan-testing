@@ -40,7 +40,7 @@ title: Routes
 
 ### Query all tram routes where number is like "1*"
 
-1. Click [this link]
+1. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20routes(name%3A%20%221%22%2C%20modes%3A%20%22TRAM%22)%20%7B%0A%20%20%20%20id%0A%20%20%20%20agency%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%7D%0A%20%20%20%20shortName%0A%20%20%20%20longName%0A%20%20%20%20desc%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
 
 ```
 {
@@ -58,9 +58,9 @@ title: Routes
 
 2. Press play in GraphiQL to execute the query.
 
-### Query stop names for bus number 1050 for one direction
+### Query stop names for bus number 50 for one direction
 
-1. Click [this link]
+1. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20pattern(id%3A%22HSL%3A1050%3A1%3A01%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20stops%7B%0A%20%20%20%20%20%20name%20%20%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
 
 ```
 {
