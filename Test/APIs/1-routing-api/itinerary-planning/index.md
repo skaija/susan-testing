@@ -54,12 +54,15 @@ You can copy paste this into a tool that [plots points on map](http://www.darrin
 
 **Note:** If the examples provided with some id or other value do not return what is expected then the value in question may not be in use any more and you should try again with an existing value.
 
-### Plan an itinerary from location (60.4,24.5) to (60.41,24.51)
+### Plan an itinerary from location (60.168992,24.932366) to (60.175294,24.684855)
+
+1. Click [this link](chrome-extension://fkkiamalmpiidkljmicmjfbieiclmeij/chromeiql.html?query=%7B%0A%20%20plan(%0A%20%20%20%20from%3A%20%7Blat%3A%2060.168992%2C%20lon%3A%2024.932366%7D%0A%20%20%20%20to%3A%20%7Blat%3A%2060.175294%2C%20lon%3A%2024.684855%7D%0A%20%20%20%20numItineraries%3A%203%0A%20%20)%20%7B%0A%20%20%20%20itineraries%20%7B%0A%20%20%20%20%20%20legs%20%7B%0A%20%20%20%20%20%20%20%20startTime%0A%20%20%20%20%20%20%20%20endTime%0A%20%20%20%20%20%20%20%20mode%0A%20%20%20%20%20%20%20%20duration%0A%20%20%20%20%20%20%20%20realTime%0A%20%20%20%20%20%20%20%20distance%0A%20%20%20%20%20%20%20%20transitLeg%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
+
 ```
 {
   plan(
-    from: {lat: 60.4, lon: 24.5}
-    to: {lat: 60.41, lon: 24.51}
+    from: {lat: 60.168992, lon: 24.932366}
+    to: {lat: 60.175294, lon: 24.684855}
     numItineraries: 3
   ) {
     itineraries {
@@ -77,7 +80,11 @@ You can copy paste this into a tool that [plots points on map](http://www.darrin
 }
 ```
 
-### Basic route from Kamppi to Pisa
+2. Press play in GraphiQL to execute the query.
+
+### Basic route from Kamppi (Helsinki) to Pisa (Espoo)
+
+1. Click [this link](chrome-extension://fkkiamalmpiidkljmicmjfbieiclmeij/chromeiql.html?query=%7B%0A%20%20plan(%0A%20%20%20%20fromPlace%3A%20%22Kamppi%2C%20Helsinki%22%2C%0A%20%20%20%20from%3A%20%7Blat%3A%2060.168992%2C%20lon%3A%2024.932366%7D%2C%0A%20%20%20%20toPlace%3A%20%22Pisa%2C%20Espoo%22%2C%0A%20%20%20%20to%3A%20%7Blat%3A%2060.175294%2C%20lon%3A%2024.684855%7D%2C%0A%20%20%20%20modes%3A%20%22BUS%2CTRAM%2CRAIL%2CSUBWAY%2CFERRY%2CWALK%22%2C%0A%20%20%20%20walkReluctance%3A%202.1%2C%0A%20%20%20%20walkBoardCost%3A%20600%2C%0A%20%20%20%20minTransferTime%3A%20180%2C%0A%20%20%20%20walkSpeed%3A%201.2%2C%0A%20%20)%20%7B%0A%20%20%20%20itineraries%7B%0A%20%20%20%20%20%20walkDistance%2C%0A%20%20%20%20%20%20duration%2C%0A%20%20%20%20%20%20legs%20%7B%0A%20%20%20%20%20%20%20%20mode%0A%20%20%20%20%20%20%20%20startTime%0A%20%20%20%20%20%20%20%20endTime%0A%20%20%20%20%20%20%20%20from%20%7B%0A%20%20%20%20%20%20%20%20%20%20lat%0A%20%20%20%20%20%20%20%20%20%20lon%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20stop%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20code%0A%20%20%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20to%20%7B%0A%20%20%20%20%20%20%20%20%20%20lat%0A%20%20%20%20%20%20%20%20%20%20lon%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20agency%20%7B%0A%20%20%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20distance%0A%20%20%20%20%20%20%20%20legGeometry%20%7B%0A%20%20%20%20%20%20%20%20%20%20length%0A%20%20%20%20%20%20%20%20%20%20points%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
 
 ```
 {
@@ -127,7 +134,12 @@ You can copy paste this into a tool that [plots points on map](http://www.darrin
 }
 ```
 
+2. Press play in GraphiQL to execute the query.
+
 ### Plan an itinerary using only WALK and RAIL modes
+
+1. Click [this link](chrome-extension://fkkiamalmpiidkljmicmjfbieiclmeij/chromeiql.html?query=%7B%0A%20%20plan(%0A%20%20%20%20from%3A%20%7Blat%3A%2060.199196699999995%2C%20lon%3A%2024.9397302%7D%0A%20%20%20%20to%3A%20%7Blat%3A%2060.168438%2C%20lon%3A%2024.929283%7D%0A%20%20%20%20numItineraries%3A%203%0A%20%20%20%20modes%3A%20%22WALK%2CRAIL%22%0A%20%20)%20%7B%0A%20%20%20%20itineraries%20%7B%0A%20%20%20%20%20%20legs%20%7B%0A%20%20%20%20%20%20%20%20startTime%0A%20%20%20%20%20%20%20%20endTime%0A%20%20%20%20%20%20%20%20mode%0A%20%20%20%20%20%20%20%20duration%0A%20%20%20%20%20%20%20%20realTime%0A%20%20%20%20%20%20%20%20distance%0A%20%20%20%20%20%20%20%20transitLeg%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
+
 ```
 {
   plan(
@@ -151,12 +163,16 @@ You can copy paste this into a tool that [plots points on map](http://www.darrin
 }
 ```
 
-### Plan an itinerary from Hakaniemi to Keilaniemi and modify some params
+2. Press play in GraphiQL to execute the query.
 
-- return five results
-- using other than subway
-- fast walking speed
-- safety margin 10 minutes
+### Plan an itinerary from Hakaniemi to Keilaniemi and modify parameters below:
+
+- Return five results
+- Using other than subway
+- Fast walking speed
+- Safety margin 10 minutes
+
+1. Click [this link]() to run the query below in GraphiQL.
 
 ```
 {
@@ -208,3 +224,5 @@ You can copy paste this into a tool that [plots points on map](http://www.darrin
   }
 }
 ```
+
+2. Press play in GraphiQL to execute the query.
