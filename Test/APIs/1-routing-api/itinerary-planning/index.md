@@ -173,7 +173,7 @@ to run the query below in GraphiQL.
 - Fast walking speed (walkSpeed: 1.7)
 - Safety margin 10 minutes (minTransferTime: 600)
 
-1. Click [this link](Ei toimi) to run the query below in GraphiQL.
+1. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20plan(%0A%20%20%20%20fromPlace%3A%20%22Hakaniemi%2C%20Helsinki%22%2C%0A%20%20%20%20from%3A%20%7Blat%3A%2060.179267%2C%20lon%3A%2024.951501%7D%2C%0A%20%20%20%20toPlace%3A%20%22Keilaniemi%2C%20Espoo%22%2C%0A%20%20%20%20to%3A%20%7Blat%3A%2060.1762%2C%20lon%3A%2024.836584%7D%2C%0A%20%20%20%20date%3A%20%222017-11-21%22%2C%0A%20%20%20%20time%3A%20%2223%3A28%3A00%22%2C%0A%20%20%20%20numItineraries%3A%205%2C%0A%20%20%20%20modes%3A%20%22BUS%2CTRAM%2CRAIL%2CFERRY%2CWALK%22%2C%0A%20%20%20%20walkReluctance%3A%202.1%2C%0A%20%20%20%20walkBoardCost%3A%20600%2C%0A%20%20%20%20minTransferTime%3A%20600%2C%0A%20%20%20%20walkSpeed%3A%201.7%2C%0A%20%20)%20%7B%0A%20%20%20%20itineraries%7B%0A%20%20%20%20%20%20walkDistance%2C%0A%20%20%20%20%20%20duration%2C%0A%20%20%20%20%20%20legs%20%7B%0A%20%20%20%20%20%20%20%20mode%0A%20%20%20%20%20%20%20%20startTime%0A%20%20%20%20%20%20%20%20endTime%0A%20%20%20%20%20%20%20%20from%20%7B%0A%20%20%20%20%20%20%20%20%20%20lat%0A%20%20%20%20%20%20%20%20%20%20lon%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20stop%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20code%0A%20%20%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20to%20%7B%0A%20%20%20%20%20%20%20%20%20%20lat%0A%20%20%20%20%20%20%20%20%20%20lon%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20agency%20%7B%0A%20%20%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20distance%0A%20%20%20%20%20%20%20%20legGeometry%20%7B%0A%20%20%20%20%20%20%20%20%20%20length%0A%20%20%20%20%20%20%20%20%20%20points%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
 
 ```
 {
@@ -182,7 +182,7 @@ to run the query below in GraphiQL.
     from: {lat: 60.179267, lon: 24.951501},
     toPlace: "Keilaniemi, Espoo",
     to: {lat: 60.1762, lon: 24.836584},
-    date: "2016-05-20",
+    date: "2017-11-21",
     time: "23:28:00",
     numItineraries: 5,
     modes: "BUS,TRAM,RAIL,FERRY,WALK",
