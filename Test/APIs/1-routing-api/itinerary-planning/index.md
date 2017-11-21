@@ -172,7 +172,7 @@ You can copy paste this into a tool that [plots points on map](http://www.darrin
 - Fast walking speed
 - Safety margin 10 minutes
 
-1. Click [this link]() to run the query below in GraphiQL.
+1. Click [this link](Ei toimi) to run the query below in GraphiQL.
 
 ```
 {
