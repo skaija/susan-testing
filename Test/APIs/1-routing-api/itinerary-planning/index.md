@@ -81,6 +81,19 @@ to run the query below in GraphiQL.
 }
 ```
 
+### Test:
+
+Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20bikeRentalStations%20%7B%0A%20%20%20%20name%0A%20%20%20%20stationId%0A%20%20%7D%0A%7D) to run the query below in GraphiQL. It should fetch all available city bike stations.
+
+```
+{
+  bikeRentalStations {
+    name
+    stationId
+  }
+}
+```
+
 2. Press play in GraphiQL to execute the query.
 
 ### Basic route from Kamppi (Helsinki) to Pisa (Espoo)
