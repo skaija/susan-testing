@@ -43,12 +43,9 @@ OpenTripPlanner requires developers to make API requests through routers. Digitr
 
 ### GraphQL
 
-GraphQL API is built by us. Similarly to REST, GraphQL has different router endpoints for Helsinki region, the Waltti regions and entire Finland:
-> http://api.digitransit.fi/routing/v1/routers/hsl/index/graphql
+GraphQL API is built by us. Similarly to REST, GraphQL has different router endpoints for Helsinki region, the Waltti regions and entire Finland. 
 
-> http://api.digitransit.fi/routing/v1/routers/waltti/index/graphql
-
-> http://api.digitransit.fi/routing/v1/routers/finland/index/graphql
+**For more details about the GraphQL you can go to our [GraphQL](../0-graphql) page**
 
 #### Introspection query
 
