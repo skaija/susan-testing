@@ -25,6 +25,9 @@ title: Stops
 **Note:** If the examples provided with an id do not return what is expected then the id in question may not be in use any more and you should try again with an existing id.
 
 ### Query all stops, returning their id, name and location
+
+1. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20stops%7B%0A%20%20%20%20gtfsId%0A%20%20%20%20name%0A%20%20%20%20lat%0A%20%20%20%20lon%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
+
 ```
 {
   stops{
@@ -36,7 +39,12 @@ title: Stops
 }
 ```
 
-### Query stop by id:
+2. Press play in GraphiQL to execute the query.
+
+### Query stop by id
+
+1. Click [this link]() to run the query below in GraphiQL.
+
 ```
 {
   stop(id: "HSL:1173210") {
@@ -46,7 +54,12 @@ title: Stops
 }
 ```
 
+2. Press play in GraphiQL to execute the query.
+
 ### Query stop by id and information about routes that go through it
+
+1. Click [this link]() to run the query below in GraphiQL.
+
 ```
 {
   stop(id: "HSL:1173112") {
@@ -67,8 +80,12 @@ title: Stops
 }
 ```
 
+2. Press play in GraphiQL to execute the query.
 
 ### Query all stops where name is like "hertton"
+
+1. Click [this link]() to run the query below in GraphiQL.
+
 ```
 {
   stops(name: "hertton") {
@@ -79,7 +96,12 @@ title: Stops
 }
 ```
 
+2. Press play in GraphiQL to execute the query.
+
 ### Query a stop by number
+
+1. Click [this link]() to run the query below in GraphiQL.
+
 ```
 {
   stops(name: "4040") {
@@ -89,3 +111,5 @@ title: Stops
   }
 }
 ```
+
+2. Press play in GraphiQL to execute the query.
