@@ -43,11 +43,11 @@ title: Stops
 
 ### Query stop by id
 
-1. Click [this link]() to run the query below in GraphiQL.
+1. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20stop(id%3A%20%22HSL%3A1140447%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20wheelchairBoarding%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
 
 ```
 {
-  stop(id: "HSL:1173210") {
+  stop(id: "HSL:1140447") {
     name
     wheelchairBoarding
   }
@@ -58,11 +58,11 @@ title: Stops
 
 ### Query stop by id and information about routes that go through it
 
-1. Click [this link]() to run the query below in GraphiQL.
+1. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20stop(id%3A%20%22HSL%3A1140447%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20lat%0A%20%20%20%20lon%0A%20%20%20%20patterns%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20route%20%7B%0A%20%20%20%20%20%20%20%20gtfsId%0A%20%20%20%20%20%20%20%20shortName%0A%20%20%20%20%20%20%20%20longName%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20directionId%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
 
 ```
 {
-  stop(id: "HSL:1173112") {
+  stop(id: "HSL:1140447") {
     name
     lat
     lon
@@ -84,7 +84,7 @@ title: Stops
 
 ### Query all stops where name is like "hertton"
 
-1. Click [this link]() to run the query below in GraphiQL.
+1. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20stops(name%3A%20%22hertton%22)%20%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20wheelchairBoarding%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
 
 ```
 {
@@ -100,7 +100,7 @@ title: Stops
 
 ### Query a stop by number
 
-1. Click [this link]() to run the query below in GraphiQL.
+1. Click [this link](https://api.digitransit.fi/graphiql/hsl?query=%7B%0A%20%20stops(name%3A%20%224040%22)%20%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20wheelchairBoarding%0A%20%20%7D%0A%7D) to run the query below in GraphiQL.
 
 ```
 {
