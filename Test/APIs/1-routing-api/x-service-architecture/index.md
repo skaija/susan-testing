@@ -1,5 +1,7 @@
 ---
 title: Service architecture
+---
+
 description:
   info: Routing API enables developers to query routes and timetable related information using either REST or GraphQL interfaces.
   architecture: https://raw.githubusercontent.com/HSLdevcom/digitransit-site/master/pages/en/developers/routing-api/architecture.xml
