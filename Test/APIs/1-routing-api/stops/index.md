@@ -2,7 +2,7 @@
 title: Stops
 ---
 
-If you haven't read getting started, [check that out first](../1-getting-started/).
+**If you are not yet familiar with [GraphQL](../0-graphql) and [GraphiQL](../1-graphiql) it is highly recommended to review those pages at first.**
 
 ## Terms
 
@@ -15,6 +15,12 @@ Also, familiarize yourself with [routes terms](../routes/).
 ## Notes about stop ids
 
 Stop ids are in "acencyid:stopid" format. HSL agencyid is **HSL**. Stop id is available as **gtfsId**.
+
+## Query examples
+
+**Note:** For more details about the query type **stops** you can use the **Documentation Explorer** provided in GraphiQL.
+
+**Note:** If the examples provided with an id do not return what is expected then the id in question may not be in use any more and you should try again with an existing id.
 
 ### Query all stops, returning their id, name and location
 ```
