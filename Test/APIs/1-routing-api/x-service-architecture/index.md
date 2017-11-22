@@ -5,7 +5,7 @@ description:
   architecture: https://raw.githubusercontent.com/HSLdevcom/digitransit-site/master/pages/en/developers/routing-api/architecture.xml
 assets:
   source: https://github.com/HSLdevcom/OpenTripPlanner
-  dockerHub: https://hub.docker.com/r/hsldevcom/OpenTripPlanner/
+  dockerHub: https://hub.docker.com/r/hsldevcom/opentripplanner/
   Dockerfile: https://github.com/HSLdevcom/OpenTripPlanner/blob/master/Dockerfile
 technologies:  
   "GTFS-RT": "https://developers.google.com/transit/gtfs-realtime/"
