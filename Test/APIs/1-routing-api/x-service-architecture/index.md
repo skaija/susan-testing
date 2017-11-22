@@ -35,11 +35,12 @@ REST interface is provided as it is available in OpenTripPlanner. First thing to
 > http://docs.opentripplanner.org/en/latest/
 
 OpenTripPlanner requires developers to make API requests through routers. Digitransit providers routers for Helsinki region, the Waltti regions and entire Finland:
-> http://api.digitransit.fi/routing/v1/routers/hsl/
 
-> http://api.digitransit.fi/routing/v1/routers/waltti/
-
-> http://api.digitransit.fi/routing/v1/routers/finland/
+| Region                        | Router URL                              |
+|-------------------------------|-----------------------------------------|
+| Helsinki region | http://api.digitransit.fi/routing/v1/routers/hsl/     |
+| Waltti regions  | http://api.digitransit.fi/routing/v1/routers/waltti/  |
+| Entire Finland  | http://api.digitransit.fi/routing/v1/routers/finland/ |
 
 ### GraphQL
 
