@@ -55,7 +55,7 @@ You can get access to GraphQL schema by running
 
 ## Related open source projects
 
-| Url                           | Open source project                     |
+| Url                           | Project description                     |
 |-------------------------------|-----------------------------------------|
 | https://github.com/opentripplanner/OpenTripPlanner            | OpenTripPlanner upstream development on GitHub
 | https://groups.google.com/forum/#!forum/opentripplanner-dev   | OpenTripPlanner developers forum where you can view or create new posts as a developer
