@@ -14,7 +14,7 @@ technologies:
 docker:
   dockerfile: https://github.com/HSLdevcom/OpenTripPlanner/blob/master/Dockerfile
   imageName: hsldevcom/opentripplanner
-  buildScript: https://github.com/HSLdevcom/OpenTripPlanner/blob/master/build-docker-image.sh
+  buildScript: https://github.com/HSLdevcom/OpenTripPlanner/blob/master/travis-build.sh
   runContainer: docker run -e OTP_DATA_CONTAINER_URL=http://otp-data-container:8080 -p 8080:8080 hsldevcom/opentripplanner
   accessContainer: http://localhost:8080/routers/
 ---
@@ -55,7 +55,7 @@ You can get access to GraphQL schema by running
 
 ## Related open source projects
 
-| Url                           | Project description                     |
+| URL                           | Project description                     |
 |-------------------------------|-----------------------------------------|
 | https://github.com/opentripplanner/OpenTripPlanner            | OpenTripPlanner upstream development on GitHub
 | https://groups.google.com/forum/#!forum/opentripplanner-dev   | OpenTripPlanner developers forum where you can view or create new posts as a developer
@@ -65,25 +65,3 @@ You can get access to GraphQL schema by running
 | https://developers.google.com/transit/                        | Google developers transit community: Making public transit data universally accessible
 | https://github.com/conveyal/r5                                | Conveyal R5 development on GitHub: Rapid Realistic Routing on Real-world and Reimagined networks
 | https://blog.conveyal.com/                                    | Conveyal and their blog
-
-1. Keep up with OpenTripPlanner upstream development on GitHub<br/>
-   https://github.com/opentripplanner/OpenTripPlanner
-
-2. Follow OpenTripPlanner developers mailing list:<br/>
-   https://groups.google.com/forum/#!forum/opentripplanner-dev
-
-3. Follow OpenTripPlanner users mailing list:<br/>
-   https://groups.google.com/forum/#!forum/opentripplanner-users
-
-4. Keep up with Conveyal R5 development on GitHub<br/>
-   https://github.com/conveyal/r5
-
-5. Keep up with Conveyal and their blog:<br/
-   http://conveyal.com/blog/
-
-6. Keep up with OneBusAway and especially GTFS related projects<br/>
-   http://onebusaway.org/<br/>
-   https://github.com/OneBusAway?utf8=%E2%9C%93&query=gtfs
-
-7. Follow Google transit community and its mailing lists:<br/>
-   https://developers.google.com/transit/community?hl=en
