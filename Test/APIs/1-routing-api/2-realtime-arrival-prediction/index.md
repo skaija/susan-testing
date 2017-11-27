@@ -13,4 +13,4 @@ Real time estimates are enabled by default when making requests. Availability of
 
 It can be turned off when planning itineraries using the 'ignoreRealtimeUpdates' parameter of 'plan'. Enabling this will only return times based on static timetables.
 
-**Note!** This is not completely bullet proof yet. The quality and availability of the real time data that Digitransit uses varies heavily at the moment.
+**Note:** This is not completely bullet proof yet. The quality and availability of the real time data that Digitransit uses varies heavily at the moment.
