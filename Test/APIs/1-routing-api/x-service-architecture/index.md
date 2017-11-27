@@ -55,6 +55,17 @@ You can get access to GraphQL schema by running
 
 ## Related open source projects
 
+| Url                           | Open source project                     |
+|-------------------------------|-----------------------------------------|
+| https://github.com/opentripplanner/OpenTripPlanner            | OpenTripPlanner upstream development on GitHub
+| https://groups.google.com/forum/#!forum/opentripplanner-dev   | OpenTripPlanner developers forum where you can view or create new posts as a developer
+| https://groups.google.com/forum/#!forum/opentripplanner-users | OpenTripPlanner users forum where you can view or create new posts as an end user
+| https://onebusaway.org/                                       | OneBusAway: The Open Source platform for Real Time Transit Info
+| https://github.com/OneBusAway?utf8=✓&query=gtfs               | GTFS related projects: Open-source transit app for real-time information
+| https://developers.google.com/transit/                        | Google developers transit community: Making public transit data universally accessible
+| https://github.com/conveyal/r5                                | Conveyal R5 development on GitHub: Rapid Realistic Routing on Real-world and Reimagined networks
+| https://blog.conveyal.com/                                    | Conveyal and their blog
+
 1. Keep up with OpenTripPlanner upstream development on GitHub<br/>
    https://github.com/opentripplanner/OpenTripPlanner
 
