@@ -16,23 +16,41 @@ Endpoint root is available at:
 | point.lat              | floating point number         | Latitude value
 | point.lon              | floating point number         | Longitude value
 | boundary.circle.radius | floating point number         | Search only inside given circle
-| size                   | integer                       | Limits the number of results returned
-| layers                 | comma-delimited string array  | Filters results by layer (value can be address, venue or street)
-| sources                | comma-delimited string array  | Filters results by source (value can be oa, osm or nlsfi)
-| boundary.country       | <a href="https://en.wikipedia.org/wiki/ISO_3166-1" target="\_blank">ISO-3166 alpha-2 or alpha-3</a> | Filters by country
+| size                   | integer                       | Limit the number of results returned
+| layers                 | comma-delimited string array  | Filter results by layer (value can be address, venue or street)
+| sources                | comma-delimited string array  | Filter results by source (value can be oa, osm or nlsfi)
+| boundary.country       | <a href="https://en.wikipedia.org/wiki/ISO_3166-1" target="\_blank">ISO-3166 alpha-2 or alpha-3</a> | Filter by country
 
 **Note: Parameter api_key is not in use in digitransit** 
 
 ## Response fields:
 
-| Parameter       | Type           | Description                                              |
+| Name       | Type           | Description                                              |
 |-----------------|----------------|----------------------------------------------------------|
-|             | string         | Text to be searched
-|             | int            | How many results to return
-|    | object         | Search only inside given rectangle
-|  | object         | Search only inside given circle
-|             | string         | Language preference 'fi' or 'sv'.
-
+| id           | string         | 
+| gid            | string            | Global id
+| layer   | string          | 
+| source | string         | 
+| source_id            | string         | 
+| name            | string         |
+| postalcode            | number         |
+| postalcode_gid            | string         |
+| confidence            | number         |
+| distance            | number         |
+| accuracy            | string         |
+| country            | string         |
+| country_gid            | string         |
+| country_a            | string         |
+| region             | string         |
+| region_gid            | string         |
+| localadmin            | string         |
+| localadmin_gid            | string         |
+| locality            | string         |
+| locality_gid            | string         |
+| neighbourhood            | string         |
+| neighbourhood_gid            | string         |
+| label            | string         |
+| bbox            | string         |
 
 ### Example to get address for given coordinates (cURL)
 
