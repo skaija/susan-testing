@@ -70,13 +70,14 @@ Address lookup always searches across all documents and returns found items in t
 language if such a language-bound name version is available, otherwise using the default name,
 which in reality can represent any language. Most default names are of course in Finnish.
 
-### Request to get all results near the ???
+### Request to get all results near Lasipalatsi
 
+https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.17023&point.lon=24.93798
 
+### Request to get only OpenStreetMap results near the Lasipalatsi
 
-### Request to get only OpenStreetMap results near the ???
+https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.17023&point.lon=24.93798&sources=osm
 
+### Request to get only street addresses near the Lasipalatsi
 
-
-### Request to get only  street addresses near the ???
-
+https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.17023&point.lon=24.93798&layers=address
