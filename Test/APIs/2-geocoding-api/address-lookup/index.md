@@ -55,13 +55,13 @@ Endpoint root is available at:
 
 ## Request examples
 
-### Request to get one result for given coordinates
+### Request to get one result for the given coordinates
 
 http://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.199284&point.lon=24.940540&size=1
 
 **Note:** Using parameter size=1 limits the number of results returned to one.
 
-### Request to get one address for given coordinates using language preference 
+### Request to get one result for the given coordinates using language preference 
 
 http://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.195&point.lon=24.93&lang=sv&size=1
 
@@ -74,11 +74,11 @@ Address lookup always searches across all documents and returns found items in t
 language if such a language-bound name version is available, otherwise using the default name,
 which in reality can represent any language. Most default names are of course in Finnish.
 
-### Request to get all addresses for given coordinates
+### Request to get all results for the given coordinates
 
 https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.170278&point.lon=24.9369448
 
-### Request to get only venue results for the same given coordinates
+### Request to get venue results for the same given coordinates
 
 https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.170278&point.lon=24.9369448&layers=venue
 
