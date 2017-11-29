@@ -2,7 +2,7 @@
 title: Address lookup
 ---
 
-Address lookup that is also called as reverse geocoding, means finding address for given coordinates.
+Address lookup that is also called as reverse geocoding means finding address for given coordinates.
 
 ## Reverse geocoding endpoint
 
@@ -28,7 +28,7 @@ Endpoint root is available at:
 | Name              | Type    | Description                                              |
 |-------------------|---------|----------------------------------------------------------|
 | id                | string  | 
-| gid               | string  | Global id
+| gid               | string  | Global id that consists of a layer (such as address or country), an identifier for the original data source (such as openstreetmap or openaddresses), and an id for the individual record corresponding to the original source identifier, where possible. 
 | layer             | string  | For example street, venue, neighbourhood, and so on.
 | source            | string  | Data source, for example  openstreetmap (osm) or openaddresses (oa)
 | source_id         | string  | 
@@ -49,8 +49,8 @@ Endpoint root is available at:
 | locality_gid      | string  |
 | neighbourhood     | string  | Social communities, neighbourhoods, for example "Itä-Pasila"
 | neighbourhood_gid | string  |
-| label             | string  | For example "East-West Pub, Itä-Pasila, Helsinki"
-| bbox              | string  |
+| label             | string  | A human-friendly representation of the place with the most complete details, that is ready to be displayed to an end user, for example "East-West Pub, Itä-Pasila, Helsinki"
+| bbox              | string  | If present, it describes the geographic extent of the feature, such as the screen size necessary to show all of California without needing to send the precise polygon geometry. 
 
 ### Example to get address for given coordinates (cURL)
 
