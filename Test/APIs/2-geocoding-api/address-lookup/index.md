@@ -2,7 +2,7 @@
 title: Address lookup
 ---
 
-Address lookup that is also called as reverse geocoding means finding address for given coordinates.
+Address lookup that is also called as reverse geocoding means finding address for given coordinates. By default the search returns 10 places, unless otherwise specified by the size parameter. The **features** property of the results returned is where you will find the list of results that matched the best with your input parameters. 
 
 ## Reverse geocoding endpoint
 
@@ -55,7 +55,7 @@ Endpoint root is available at:
 
 ## Request examples
 
-### Request to get one result for the given coordinates
+### Request to get only one result for the given coordinates
 
 http://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.199284&point.lon=24.940540&size=1
 
