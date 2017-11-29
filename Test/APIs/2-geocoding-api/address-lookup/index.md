@@ -77,7 +77,7 @@ https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.170278&point.lon=24
 
 **Note:** Using parameter layers=address returns results for places with a street address.
 
-### Request to get one result for the given coordinates using language preference 
+### Request to get results for the given coordinates using language preference 
 
 http://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.195&point.lon=24.93&lang=sv
 
