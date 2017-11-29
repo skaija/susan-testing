@@ -15,12 +15,12 @@ Endpoint root is available at:
 |-----------------|----------------|----------------------------------------------------------|
 | point.lat              | floating point number         | Latitude value
 | point.lon              | floating point number         | Longitude value
-| lang                   | string                        | Return found items in the preferred language if such a language-bound name version is available, otherwise use the default name
-| boundary.circle.radius | floating point number         | Search only inside given circle
-| size                   | integer                       | Limit the number of results returned
-| layers                 | comma-delimited string array  | Filter results by layer (value can be address, venue or street)
-| sources                | comma-delimited string array  | Filter results by source (value can be oa, osm or nlsfi)
-| boundary.country       | <a href="https://en.wikipedia.org/wiki/ISO_3166-1" target="\_blank">ISO-3166 alpha-2 or alpha-3</a> | Filter by country
+| lang                   | string                        | Returns results in the preferred language if such a language-bound name version is available, otherwise use the default name
+| boundary.circle.radius | floating point number         | Searches only inside given circle
+| size                   | integer                       | Limits the number of results returned
+| layers                 | comma-delimited string array  | Filters results by layer (value can be address, venue or street)
+| sources                | comma-delimited string array  | Filters results by source (value can be oa, osm or nlsfi)
+| boundary.country       | <a href="https://en.wikipedia.org/wiki/ISO_3166-1" target="\_blank">ISO-3166 alpha-2 or alpha-3</a> | Filters results by country
 
 **Note:** Parameter api_key is not in use in digitransit
 
