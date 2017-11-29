@@ -55,29 +55,35 @@ Endpoint root is available at:
 
 ## Request examples
 
-### Request to get address for given coordinates
+### Request to get one result for given coordinates
 
 http://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.199284&point.lon=24.940540&size=1
 
-### Request to get address for given coordinates using language preference 
+**Note:** Using parameter size=1 limits the number of results returned to one.
+
+### Request to get one address for given coordinates using language preference 
 
 http://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.195&point.lon=24.93&lang=sv&size=1
 
-**Note:**  Part of the provided geocoding data does not include Swedish names, and part of the data
+**Note:** Using parameter lang=sv returns results in Swedish if such a language-bound name version is available.
+
+Part of the provided geocoding data does not include Swedish names, and part of the data
 does not specify the language at all. A swedish-speaking person may add a new address entry
 'Fabriksgatan xx, Helsingfors' to OpenStreetMap without specifying the language.
 Address lookup always searches across all documents and returns found items in the preferred
 language if such a language-bound name version is available, otherwise using the default name,
 which in reality can represent any language. Most default names are of course in Finnish.
 
-### Request to get all results near Lasipalatsi
+### Request to get all addresses for given coordinates
 
-https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.17023&point.lon=24.93798
+https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.170278&point.lon=24.9369448
 
-### Request to get only OpenStreetMap results near the Lasipalatsi
+### Request to get only venue results for the same given coordinates
 
-https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.17023&point.lon=24.93798&sources=osm
+https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.170278&point.lon=24.9369448&layers=venue
 
-### Request to get only street addresses near the Lasipalatsi
+**Note:** Layers=venue returns details for points of interest, businesses, things with walls.
 
-https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.17023&point.lon=24.93798&layers=address
+### Request to get places with a street address for the same given coordinates
+
+https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.170278&point.lon=24.9369448&layers=address
