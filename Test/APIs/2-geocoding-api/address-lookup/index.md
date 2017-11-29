@@ -2,7 +2,7 @@
 title: Address lookup
 ---
 
-Address lookup that is also called as reverse geocoding means finding address for given coordinates. By default the search returns 10 places, unless otherwise specified by the size parameter. The **features** property of the results returned is where you will find the list of results that matched the best with your input parameters. 
+Address lookup that is also called as reverse geocoding means finding address for given coordinates. The **features** property of the results returned is where you will find the list of results that matched the best with your input parameters. 
 
 ## Reverse geocoding endpoint
 
