@@ -15,8 +15,8 @@ Endpoint root is available at:
 |-----------------|----------------|----------------------------------------------------------|
 | point.lat              | floating point number         | Latitude value
 | point.lon              | floating point number         | Longitude value
-| lang                   | string                        | Returns results in the preferred language if such a language-bound name version is available, otherwise use the default name
-| boundary.circle.radius | floating point number         | Searches only inside given circle
+| lang                   | string                        | Returns results in the preferred language if such a language-bound name version is available
+| boundary.circle.radius | floating point number         | Searches only inside the given circle
 | size                   | integer                       | Limits the number of results returned
 | layers                 | comma-delimited string array  | Filters results by layer (value can be address, venue or street)
 | sources                | comma-delimited string array  | Filters results by source (value can be oa, osm or nlsfi)
