@@ -2,14 +2,14 @@
 title: Address search
 ---
 
-Address search can be used to search addresses and place names. Duh.
+Address search can be used to search addresses and place names.  An address is matched to its corresponding geographic coordinates and in the simplest search, you can provide only one parameter, the text you want to match in any part of the location details.
 
 <!--
 ## Address search APIs
 
 Address search can be done using either **Autocomplete API** or **Search API**
 
-Autocomplete API is lighter and it's designed for "autocomplete" style searches. Search API has more search parameters available.
+Autocomplete API is lighter and is designed for "autocomplete" style searches. Search API has more search parameters available.
 
 ### Which one should I use?
 
@@ -18,7 +18,7 @@ If you need to limit your searches to some area, use Search API. If you don't wa
 ## Autocomplete API
 Autocomplete API can be used to make fuzzy searches e.g. when the user starts typing location into a search field. API is available at:
 
-> http://api.digitransit.fi/geocoding/v1/autocomplete
+> http://<i></i>api.digitransit.fi/geocoding/v1/autocomplete
 
 Search for kamppi:
 ```
