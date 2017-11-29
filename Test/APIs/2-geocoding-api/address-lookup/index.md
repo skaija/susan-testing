@@ -9,6 +9,31 @@ Address lookup that is also called as reverse geocoding, means finding address f
 Endpoint root is available at:
 > http://<i></i>api.digitransit.fi/geocoding/v1/reverse
 
+## Supported url parameters:
+
+| Parameter       | Type           | Description                                              |
+|-----------------|----------------|----------------------------------------------------------|
+| point.lat              | floating point number         | Latitude value
+| point.lon              | floating point number         | Longitude value
+| boundary.circle.radius | floating point number         | Search only inside given circle
+| size                   | integer                       | Limits the number of results returned
+| layers                 | comma-delimited string array  | Filters results by layer (value can be address, venue or street)
+| sources                | comma-delimited string array  | Filters results by source (value can be oa, osm or nlsfi)
+| boundary.country       | <a href="https://en.wikipedia.org/wiki/ISO_3166-1" target="\_blank">ISO-3166 alpha-2 or alpha-3</a> | Filters by country
+
+**Note: Parameter api_key is not in use in digitransit** 
+
+## Response fields:
+
+| Parameter       | Type           | Description                                              |
+|-----------------|----------------|----------------------------------------------------------|
+|             | string         | Text to be searched
+|             | int            | How many results to return
+|    | object         | Search only inside given rectangle
+|  | object         | Search only inside given circle
+|             | string         | Language preference 'fi' or 'sv'.
+
+
 ### Example to get address for given coordinates (cURL)
 
 ```
