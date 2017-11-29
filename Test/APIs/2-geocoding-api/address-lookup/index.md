@@ -30,7 +30,7 @@ Endpoint root is available at:
 |-------------------|---------|----------------------------------------------------------|
 | id                | string  | 
 | gid               | string  | Global id that consists of a layer (such as address or country), an identifier for the original data source (such as openstreetmap or openaddresses), and an id for the individual record corresponding to the original source identifier, where possible. 
-| layer             | string  | For example street, venue, neighbourhood, and so on.
+| layer             | string  | Address, venue or street
 | source            | string  | Data source, for example  openstreetmap (osm) or openaddresses (oa)
 | source_id         | string  | 
 | name              | string  | A short description of the location, for example a business name, a locality name, or part of an address, depending on what is being searched for and what is returned.
