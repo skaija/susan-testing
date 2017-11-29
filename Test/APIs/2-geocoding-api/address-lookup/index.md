@@ -25,32 +25,32 @@ Endpoint root is available at:
 
 ## Response fields:
 
-| Name       | Type           | Description                                              |
-|-----------------|----------------|----------------------------------------------------------|
-| id           | string         | 
-| gid            | string            | Global id
-| layer   | string          | 
-| source | string         | 
-| source_id            | string         | 
-| name            | string         |
-| postalcode            | number         |
-| postalcode_gid            | string         |
-| confidence            | number         |
-| distance            | number         |
-| accuracy            | string         |
-| country            | string         |
-| country_gid            | string         |
-| country_a            | string         |
-| region             | string         |
-| region_gid            | string         |
-| localadmin            | string         |
-| localadmin_gid            | string         |
-| locality            | string         |
-| locality_gid            | string         |
-| neighbourhood            | string         |
-| neighbourhood_gid            | string         |
-| label            | string         |
-| bbox            | string         |
+| Name              | Type    | Description                                              |
+|-------------------|---------|----------------------------------------------------------|
+| id                | string  | 
+| gid               | string  | Global id
+| layer             | string  | Street, venue, neighbourhood, and so on
+| source            | string  | Data source, for example  openstreetmap (osm) or openaddresses (oa)
+| source_id         | string  | 
+| name              | string  | A short description of the location, for example a business name, a locality name, or part of an address, depending on what is being searched for and what is returned.
+| postalcode        | number  | 
+| postalcode_gid    | string  |
+| confidence        | number  | An estimation of how accurately this result matches the query
+| distance          | number  | 
+| accuracy          | string  |
+| country           | string  |
+| country_gid       | string  |
+| country_a         | string  | Alpha-3 code, for example FIN
+| region            | string  | For example Uusimaa
+| region_gid        | string  | 
+| localadmin        | string  | For example Helsinki
+| localadmin_gid    | string  |
+| locality          | string  | For example Helsinki
+| locality_gid      | string  |
+| neighbourhood     | string  | For example Itä-Pasila
+| neighbourhood_gid | string  |
+| label             | string  | 
+| bbox              | string  |
 
 ### Example to get address for given coordinates (cURL)
 
