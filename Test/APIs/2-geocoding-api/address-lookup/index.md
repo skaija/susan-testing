@@ -15,13 +15,14 @@ Endpoint root is available at:
 |-----------------|----------------|----------------------------------------------------------|
 | point.lat              | floating point number         | Latitude value
 | point.lon              | floating point number         | Longitude value
+| lang                   | string                        | Return found items in the preferred language if such a language-bound name version is available, otherwise use the default name
 | boundary.circle.radius | floating point number         | Search only inside given circle
 | size                   | integer                       | Limit the number of results returned
 | layers                 | comma-delimited string array  | Filter results by layer (value can be address, venue or street)
 | sources                | comma-delimited string array  | Filter results by source (value can be oa, osm or nlsfi)
 | boundary.country       | <a href="https://en.wikipedia.org/wiki/ISO_3166-1" target="\_blank">ISO-3166 alpha-2 or alpha-3</a> | Filter by country
 
-**Note: Parameter api_key is not in use in digitransit** 
+**Note:** Parameter api_key is not in use in digitransit
 
 ## Response fields:
 
@@ -52,23 +53,30 @@ Endpoint root is available at:
 | label             | string  | A human-friendly representation of the place with the most complete details, that is ready to be displayed to an end user, for example "East-West Pub, Itä-Pasila, Helsinki"
 | bbox              | string  | If present, it describes the geographic extent of the feature, such as the screen size necessary to show all of California without needing to send the precise polygon geometry. 
 
-### Example to get address for given coordinates (cURL)
+## Request examples
 
-```
-curl "http://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.199284&point.lon=24.940540&size=1"
-```
-
-### Example to get address for given coordinates (Browser)
+### Request to get address for given coordinates
 
 http://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.199284&point.lon=24.940540&size=1
 
-### Language preference
+### Request to get address for given coordinates using language preference 
 
 http://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.195&point.lon=24.93&lang=sv&size=1
 
-Note, that part of the provided geocoding data does not include Swedish names, and part of the data
+**Note:**  Part of the provided geocoding data does not include Swedish names, and part of the data
 does not specify the language at all. A swedish-speaking person may add a new address entry
 'Fabriksgatan xx, Helsingfors' to OpenStreetMap without specifying the language.
 Address lookup always searches across all documents and returns found items in the preferred
 language if such a language-bound name version is available, otherwise using the default name,
 which in reality can represent any language. Most default names are of course in Finnish.
+
+### Request to get all results near the ???
+
+
+
+### Request to get only OpenStreetMap results near the ???
+
+
+
+### Request to get only  street addresses near the ???
+
