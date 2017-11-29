@@ -2,12 +2,12 @@
 title: Address lookup
 ---
 
-Address lookup, aka. reverse geocoding, means finding address for given coordinates.
+Address lookup that is also called as reverse geocoding, means finding address for given coordinates.
 
 ## Reverse geocoding endpoint
 
 Endpoint root is available at:
-> http://api.digitransit.fi/geocoding/v1/reverse
+> http://<i></i>api.digitransit.fi/geocoding/v1/reverse
 
 ### Example to get address for given coordinates (cURL)
 
