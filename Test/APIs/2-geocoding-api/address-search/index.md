@@ -90,7 +90,7 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 | label             | string  | A human-friendly representation of the place with the most complete details, that is ready to be displayed to an end user, for example "East-West Pub, Itä-Pasila, Helsinki"
 | bbox              | string  | If present, it describes the geographic extent of the feature, such as the screen size necessary to show all of California without needing to send the precise polygon geometry. 
 
-**Note:** Not exactly the same fields are returned for all searches because all object locations do not have the same data available, for example neighborhood is not in use with all object types.
+**Note:** Not exactly the same fields are returned for all searches because all object locations do not have the same data available, for example neighborhood is not in use with all objects.
 
 ## Search examples
 
@@ -120,7 +120,7 @@ https://api.digitransit.fi/geocoding/v1/search?text=kamppi&boundary.circle.lat=6
 
 https://api.digitransit.fi/geocoding/v1/search?text=kamppi&focus.point.lat=60.2&focus.point.lon=24.936
 
-**Note:** Using parameter **focus.point** scores nearby places higher depending on how close they are to the focus.point so that places with higher scores will appear higher in the results list.
+**Note:** Using parameter **focus.point** scores nearby places higher depending on how close they are to the focus.point so that places with higher scores will appear higher in the results list. After all the nearby results have been found, additional results will come from the rest of the world, without any further location-based prioritization.
 
 ## Language preference
 
