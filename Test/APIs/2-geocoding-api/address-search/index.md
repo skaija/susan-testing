@@ -39,20 +39,64 @@ To Read more about Pelias autocomplete API, check:
 
 -->
 
-### Search API
+## Search API
 Search API provides a way query addresses and POIs (points of interest). API is available at:
 
 > http://<i></i>api.digitransit.fi/geocoding/v1/search
 
-Supported url parameters:
-| Parameter       | Type           | Description                                              |
-|-----------------|----------------|----------------------------------------------------------|
-| text            | string         | Text to be searched
-| size            | int            | How many results to return
-| boundary.rect   | object         | Search only inside given rectangle
-| boundary.cirlce | object         | Search only inside given circle
-| lang            | string         | Language preference 'fi' or 'sv'.
+## Supported url parameters:
 
+| Parameter              | Type           | Description                                              |
+|------------------------|----------------|----------------------------------------------------------|
+| text                   | string         | Text to be searched
+| size                   | intege         | How many results to return
+| focus.point.lat        | string         | 
+| focus.point.lon        | intege         | 
+| boundary.rect.min_lon  | object         | 
+| boundary.rect.max_lon  | 
+| boundary.rect.min_lat  | object         | 
+| boundary.rect.max_lat	 | string         | 
+| boundary.circle.lat    | object         | Search only inside given circle
+| boundary.circle.lon    | object         | Search only inside given circle
+| boundary.circle.radius | object         | Search only inside given circle
+| sources                | string         | 
+| layers                 | string         | 
+| boundary.country       | string         |  
+| lang                   | string         | Language preference 'fi' or 'sv'.
+
+**Note:** Parameter api_key is not in use in digitransit
+
+## Response fields:
+
+| Name              | Type    | Description                                              |
+|-------------------|---------|----------------------------------------------------------|
+| id                | string  | 
+| gid               | string  | Global id that consists of a layer (such as address or country), an identifier for the original data source (such as openstreetmap or openaddresses), and an id for the individual record corresponding to the original source identifier, where possible. 
+| layer             | string  | Address, venue or street
+| source            | string  | Data source, for example osm (openstreetmap), oa (openaddresses) or nlsfi
+| source_id         | string  | 
+| name              | string  | A short description of the location, for example a business name, a locality name, or part of an address, depending on what is being searched for and what is returned.
+| postalcode        | number  | 
+| postalcode_gid    | string  |
+| confidence        | number  | An estimation of how accurately this result matches the query
+| distance          | number  | A distance from the query point (in meters) 
+| accuracy          | string  |
+| country           | string  | Places that issue passports, nations, nation-states
+| country_gid       | string  |
+| country_a         | string  | Alpha-3 code, for example FIN
+| region            | string  | For example "Uusimaa"
+| region_gid        | string  | 
+| localadmin        | string  | Local administrative boundaries, for example "Helsinki"
+| localadmin_gid    | string  |
+| locality          | string  | Towns, hamlets, cities, for example "Helsinki"
+| locality_gid      | string  |
+| neighbourhood     | string  | Social communities, neighbourhoods, for example "Itä-Pasila"
+| neighbourhood_gid | string  |
+| label             | string  | A human-friendly representation of the place with the most complete details, that is ready to be displayed to an end user, for example "East-West Pub, Itä-Pasila, Helsinki"
+| bbox              | string  | If present, it describes the geographic extent of the feature, such as the screen size necessary to show all of California without needing to send the precise polygon geometry. 
+
+
+## Request examples
 
 ### Search 'kamppi', return only one result
 
