@@ -114,6 +114,8 @@ https://api.digitransit.fi/geocoding/v1/search?text=kamppi&boundary.rect.min_lat
 
 https://api.digitransit.fi/geocoding/v1/search?text=kamppi&boundary.circle.lat=60.2&boundary.circle.lon=24.936&boundary.circle.radius=30
 
+**Note:** The **boundary.circle.radius** parameter is always specified in kilometers.
+
 ### Search 'kamppi' using focus point
 
 https://api.digitransit.fi/geocoding/v1/search?text=kamppi&focus.point.lat=60.2&focus.point.lon=24.936
