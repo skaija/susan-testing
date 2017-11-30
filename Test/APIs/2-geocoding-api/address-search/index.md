@@ -40,7 +40,7 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 | postalcode_gid    | string  |
 | confidence        | number  | An estimation of how accurately this result matches the query
 | distance          | number  | A distance from the query point (in meters) 
-| accuracy          | string  |
+| accuracy          | string  | Returns always coordinates of just one point. If the object is originally an area or a line like a road, then the centroid is calculated (value can be point or centroid)
 | country           | string  | Places that issue passports, nations, nation-states
 | country_gid       | string  |
 | country_a         | string  | Alpha-3 code, for example FIN
