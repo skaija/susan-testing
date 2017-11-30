@@ -51,16 +51,13 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 |------------------------|------------------------|----------------------------------------------------------|
 | text                   | string                 | Text to be searched
 | size                   | integer                | Limits the number of results returned
-| focus.point.lat        | floating point number  | Scores nearby places higher depending on how close they are to the **focus.point-lat** so that places with higher scores will appear higher in the results list.
-| focus.point.lon        | floating point number  | Scores nearby places higher depending on how close they are to the **focus.point.lon** so that places with higher scores will appear higher in the results list.
-| boundary.rect.min_lon boundary.rect.max_lon boundary.rect.min_lat boundary.rect.max_lat	 | floating point number  | Specifies the boundary using a rectangle with latitude and longitude coordinates for two diagonals of the bounding box (the minimum and the maximum latitude, longitude)
-| boundary.circle.lat    | floating point number  | Search only inside given circle
-| boundary.circle.lon    | floating point number  | Search only inside given circle
-| boundary.circle.radius | floating point number  | Search only inside given circle
-| sources                | string                 | 
+| focus.point.lat focus.point.lon  | floating point number  | Scores the nearby places higher depending on how close they are to the **focus.point** so that places with higher scores will appear higher in the results list.
+| boundary.rect.min_lon boundary.rect.max_lon boundary.rect.min_lat boundary.rect.max_lat	 | floating point number  | The boundary is specified using a rectangle with latitude and longitude coordinates for two diagonals of the bounding box (the minimum and the maximum latitude, longitude)
+| boundary.circle.lat boundary.circle.lon boundary.circle.radius | floating point number  | Searches using location coordinates and a maximum distance radius within which acceptable results can be located.
+| sources                | comma-delimited string array | Filters results by source (value can be oa, osm or nlsfi)
 | layers                 | string                 | Filters results by layer (value can be address, venue or street)
 | boundary.country       | <a href="https://en.wikipedia.org/wiki/ISO_3166-1" target="\_blank">ISO-3166 alpha-2 or alpha-3</a>                  | Filters results by country 
-| lang                   | string                 | Language preference 'fi' or 'sv'.
+| lang                   | string                 | Returns results in the preferred language if such a language-bound name version is available (value can be 'fi' or 'sv').
 
 **Note:** Parameter api_key is not in use in digitransit
 
