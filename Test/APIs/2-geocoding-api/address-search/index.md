@@ -53,10 +53,7 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 | size                   | integer                | Limits the number of results returned
 | focus.point.lat        | floating point number  | Scores nearby places higher depending on how close they are to the **focus.point-lat** so that places with higher scores will appear higher in the results list.
 | focus.point.lon        | floating point number  | Scores nearby places higher depending on how close they are to the **focus.point.lon** so that places with higher scores will appear higher in the results list.
-| boundary.rect.min_lon  | floating point number  | 
-| boundary.rect.max_lon  | floating point number  |
-| boundary.rect.min_lat  | floating point number  | 
-| boundary.rect.max_lat	 | floating point number  | 
+| boundary.rect.min_lon boundary.rect.max_lon boundary.rect.min_lat boundary.rect.max_lat	 | floating point number  | Specifies the boundary using a rectangle with latitude and longitude coordinates for two diagonals of the bounding box (the minimum and the maximum latitude, longitude)
 | boundary.circle.lat    | floating point number  | Search only inside given circle
 | boundary.circle.lon    | floating point number  | Search only inside given circle
 | boundary.circle.radius | floating point number  | Search only inside given circle
