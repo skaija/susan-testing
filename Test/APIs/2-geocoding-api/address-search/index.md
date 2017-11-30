@@ -40,11 +40,12 @@ To Read more about Pelias autocomplete API, check:
 -->
 
 ## Search API
-Search API provides a way query addresses and POIs (points of interest). API is available at:
 
-> http://<i></i>api.digitransit.fi/geocoding/v1/search
+Search API provides a way to query addresses and POIs (points of interest). API is available at:
 
-## Supported url parameters:
+`http://api.digitransit.fi/geocoding/v1/search`
+
+## Supported url parameters
 
 | Parameter              | Type           | Description                                              |
 |------------------------|----------------|----------------------------------------------------------|
@@ -66,7 +67,7 @@ Search API provides a way query addresses and POIs (points of interest). API is 
 
 **Note:** Parameter api_key is not in use in digitransit
 
-## Response fields:
+## Response fields
 
 | Name              | Type    | Description                                              |
 |-------------------|---------|----------------------------------------------------------|
