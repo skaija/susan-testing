@@ -2,14 +2,15 @@
 title: Address lookup
 ---
 
-Address lookup that is also called as reverse geocoding means finding address for given coordinates. The **features** property of the results returned is where you will find the list of results that matched the best with your input parameters. 
+Address lookup, otherwise known as reverse geocoding, is used for finding places/addresses for given coordinates. The **features** property of the results returned is where you will find the list of results that matched the best with your input parameters.
 
 ## Reverse geocoding endpoint
 
 Endpoint root is available at:
-> http://<i></i>api.digitransit.fi/geocoding/v1/reverse
 
-## Supported url parameters:
+`http://api.digitransit.fi/geocoding/v1/reverse`
+
+## Supported url parameters
 
 | Parameter       | Type           | Description                                              |
 |-----------------|----------------|----------------------------------------------------------|
@@ -24,7 +25,7 @@ Endpoint root is available at:
 
 **Note:** Parameter api_key is not in use in digitransit
 
-## Response fields:
+## Response fields
 
 | Name              | Type    | Description                                              |
 |-------------------|---------|----------------------------------------------------------|
