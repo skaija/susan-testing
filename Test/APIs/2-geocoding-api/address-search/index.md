@@ -52,7 +52,7 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 | text                   | string                 | Text to be searched
 | size                   | integer                | Limits the number of results returned
 | boundary.rect.min_lon boundary.rect.max_lon boundary.rect.min_lat boundary.rect.max_lat	 | floating point number  | Searches using a  boundary that is specified by a rectangle with latitude and longitude coordinates for two diagonals of the bounding box (the minimum and the maximum latitude, longitude)
-| boundary.circle.lat / boundary.circle.lon boundary.circle.radius | floating point number  | Searches using location coordinates and a maximum distance radius within which acceptable results can be located.
+| boundary.circle.lat boundary.circle.lon boundary.circle.radius | floating point number  | Searches using location coordinates and a maximum distance radius within which acceptable results can be located.
 | focus.point.lat focus.point.lon  | floating point number  | Scores the nearby places higher depending on how close they are to the **focus.point** so that places with higher scores will appear higher in the results list.
 | sources                | comma-delimited string array | Filters results by source (value can be oa, osm or nlsfi)
 | layers                 | string                 | Filters results by layer (value can be address, venue or street)
