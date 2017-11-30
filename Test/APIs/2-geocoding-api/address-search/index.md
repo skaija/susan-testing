@@ -52,7 +52,7 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 | text                   | string                 | Text to be searched
 | size                   | integer                | Limits the number of results returned
 | focus.point.lat / lon  | floating point number  | Scores the nearby places higher depending on how close they are to the **focus.point** so that places with higher scores will appear higher in the results list.
-| boundary.rect.min_lon boundary.rect.max_lon boundary.rect.min_lat boundary.rect.max_lat	 | floating point number  | The boundary is specified using a rectangle with latitude and longitude coordinates for two diagonals of the bounding box (the minimum and the maximum latitude, longitude)
+| boundary.rect.min_lon boundary.rect.max_lon boundary.rect.min_lat boundary.rect.max_lat	 | floating point number  | Searches using a  boundary that is specified by a rectangle with latitude and longitude coordinates for two diagonals of the bounding box (the minimum and the maximum latitude, longitude)
 | boundary.circle.lat boundary.circle.lon boundary.circle.radius | floating point number  | Searches using location coordinates and a maximum distance radius within which acceptable results can be located.
 | sources                | comma-delimited string array | Filters results by source (value can be oa, osm or nlsfi)
 | layers                 | string                 | Filters results by layer (value can be address, venue or street)
@@ -94,23 +94,17 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 
 ## Request examples
 
-### Search 'kamppi', return only one result
+### Search 'kamppi' and return only one result
 
-```
-curl "http://api.digitransit.fi/geocoding/v1/search?text=kamppi&size=1"
-```
+http://api.digitransit.fi/geocoding/v1/search?text=kamppi&size=1
 
-### Restrict searches to given rectangle
+### Search using a rectangle
 
-```
-curl "http://api.digitransit.fi/geocoding/v1/search?text=kamppi&boundary.rect.min_lat=59.9&boundary.rect.max_lat=60.45&boundary.rect.min_lon=24.3&boundary.rect.max_lon=25.5"
-```
+http://api.digitransit.fi/geocoding/v1/search?text=kamppi&boundary.rect.min_lat=59.9&boundary.rect.max_lat=60.45&boundary.rect.min_lon=24.3&boundary.rect.max_lon=25.5
 
-### Search inside rectangle
+### Search inside circle
 
-```
-curl "http://api.digitransit.fi/geocoding/v1/search?text=kamppi&boundary.circle.lat=60.2&boundary.circle.lon=24.936&boundary.circle.radius=30"
-```
+http://api.digitransit.fi/geocoding/v1/search?text=kamppi&boundary.circle.lat=60.2&boundary.circle.lon=24.936&boundary.circle.radius=30
 
 ### Language preference
 
@@ -132,9 +126,8 @@ http://api.digitransit.fi/geocoding/v1/search?text=ulrikasborg&lang=fi
 In this case, the search string matches perfectly a swedish place name, and consiquently the result is
 "Ulrikasborg, Helsingfors". In other words, the geocoding API does not act like a translation service.
 
-Note, that part of the provided geocoding data does not include Swedish names, and part of the data
+**Note:** Part of the provided geocoding data does not include Swedish names, and part of the data
 leaves the language context unknown. This may occasionally cause unexpected errors in language selection.
-
 
 ### Extra documentation
 
