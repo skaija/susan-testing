@@ -4,41 +4,6 @@ title: Address search
 
 Address search can be used to search addresses and place names.  An address is matched to its corresponding geographic coordinates and in the simplest search, you can provide only one parameter, the text you want to match in any part of the location details.
 
-<!--
-## Address search APIs
-
-Address search can be done using either **Autocomplete API** or **Search API**
-
-Autocomplete API is lighter and is designed for "autocomplete" style searches. Search API has more search parameters available.
-
-### Which one should I use?
-
-If you need to limit your searches to some area, use Search API. If you don't want to limit searches to some area, use Autocomplete API.
-
-## Autocomplete API
-Autocomplete API can be used to make fuzzy searches e.g. when the user starts typing location into a search field. API is available at:
-
-> http://<i></i>api.digitransit.fi/geocoding/v1/autocomplete
-
-Search for kamppi:
-```
-curl "http://api.digitransit.fi/geocoding/v1/autocomplete?text=kampp"
-```
-
-### Focus Autocomple API responses around given point
-
-Search focus point boosts addresses found near the given focus point.
-
-You can use focus.point-params like so:
-```
-curl "http://api.digitransit.fi/geocoding/v1/autocomplete?text=kamppi&focus.point.lat=60.1995&focus.point.lon=24.9363"
-```
-
-To Read more about Pelias autocomplete API, check:
-> https://github.com/pelias/pelias-doc/blob/master/autocomplete.md
-
--->
-
 ## Search API
 
 Search API provides a way to query addresses and POIs (points of interest). API is available at:
