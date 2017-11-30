@@ -110,17 +110,17 @@ https://api.digitransit.fi/geocoding/v1/search?text=kamppi&layers=address
 
 https://api.digitransit.fi/geocoding/v1/search?text=kamppi&boundary.rect.min_lat=59.9&boundary.rect.max_lat=60.45&boundary.rect.min_lon=24.3&boundary.rect.max_lon=25.5
 
-### Search 'kamppi' inside circle
+### Search 'kamppi' inside a circle
 
 https://api.digitransit.fi/geocoding/v1/search?text=kamppi&boundary.circle.lat=60.2&boundary.circle.lon=24.936&boundary.circle.radius=30
 
-**Note:** The **boundary.circle.radius** parameter is always specified in kilometers.
+**Note:** Parameter **boundary.circle.radius**  is always specified in kilometers.
 
-### Search 'kamppi' using focus point
+### Search 'kamppi' using a focus point
 
 https://api.digitransit.fi/geocoding/v1/search?text=kamppi&focus.point.lat=60.2&focus.point.lon=24.936
 
-**Note:** Using the **focus.point** parameter scores nearby places higher depending on how close they are to the focus.point so that places with higher scores will appear higher in the results list.
+**Note:** Using parameter **focus.point** scores nearby places higher depending on how close they are to the focus.point so that places with higher scores will appear higher in the results list.
 
 ## Language preference
 
