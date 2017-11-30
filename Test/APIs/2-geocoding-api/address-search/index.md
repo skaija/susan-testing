@@ -92,21 +92,37 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 
 **Note:** Not exactly the same fields are returned for all searches because all object locations do not have the same data available, for example neighborhood is not in use with all object types.
 
-## Request examples
+## Search examples
 
 ### Search 'kamppi' and return only one result
 
 http://api.digitransit.fi/geocoding/v1/search?text=kamppi&size=1
 
-### Search using a rectangle
+**Note:** Using parameter **size=1** limits the number of results returned to one.
+
+### Search 'kamppi' and filter results by street address
+
+http://api.digitransit.fi/geocoding/v1/search?text=kamppi&layers=address
+
+**Note:** Using parameter **layers=address** returns results for places having text kamppi with a street address.
+
+### Search 'kamppi' using a rectangle
 
 http://api.digitransit.fi/geocoding/v1/search?text=kamppi&boundary.rect.min_lat=59.9&boundary.rect.max_lat=60.45&boundary.rect.min_lon=24.3&boundary.rect.max_lon=25.5
 
-### Search inside circle
+### Search 'kamppi' inside circle
 
 http://api.digitransit.fi/geocoding/v1/search?text=kamppi&boundary.circle.lat=60.2&boundary.circle.lon=24.936&boundary.circle.radius=30
 
-### Language preference
+### Search 'kamppi' using focus point
+
+http://api.digitransit.fi/geocoding/v1/search?text=kamppi&focus.point.lat=60.2&focus.point.lon=24.936
+
+**Note:** Using the **focus.point** parameter scores nearby places higher depending on how close they are to the focus.point so that places with higher scores will appear higher in the results list.
+
+Note: Using parameter layers=address returns results for places with a street address.
+
+## Language preference
 
 The language preference can be defined using 'lang=xx' parameter, default being 'lang=fi'. Unlike in reverse
 geocoding, the preference has significance for geocoding searches only when multiple languages provide
@@ -129,7 +145,7 @@ In this case, the search string matches perfectly a swedish place name, and cons
 **Note:** Part of the provided geocoding data does not include Swedish names, and part of the data
 leaves the language context unknown. This may occasionally cause unexpected errors in language selection.
 
-### Extra documentation
+## Extra documentation
 
 Geocoding API is implemented using Pelias. If you are interested, you can learn more about Pelias search API from:
 
