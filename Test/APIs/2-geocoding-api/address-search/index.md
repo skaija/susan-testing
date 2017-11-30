@@ -47,23 +47,23 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 
 ## Supported url parameters
 
-| Parameter              | Type           | Description                                              |
-|------------------------|----------------|----------------------------------------------------------|
-| text                   | string         | Text to be searched
-| size                   | intege         | How many results to return
-| focus.point.lat        | string         | 
-| focus.point.lon        | intege         | 
-| boundary.rect.min_lon  | object         | 
-| boundary.rect.max_lon  | 
-| boundary.rect.min_lat  | object         | 
-| boundary.rect.max_lat	 | string         | 
-| boundary.circle.lat    | object         | Search only inside given circle
-| boundary.circle.lon    | object         | Search only inside given circle
-| boundary.circle.radius | object         | Search only inside given circle
-| sources                | string         | 
-| layers                 | string         | 
-| boundary.country       | string         |  
-| lang                   | string         | Language preference 'fi' or 'sv'.
+| Parameter              | Type                   | Description                                              |
+|------------------------|------------------------|----------------------------------------------------------|
+| text                   | string                 | Text to be searched
+| size                   | integer                | Limits the number of results returned
+| focus.point.lat        | floating point number  | Scores nearby places higher depending on how close they are to the **focus.point-lat** so that places with higher scores will appear higher in the results list.
+| focus.point.lon        | floating point number  | Scores nearby places higher depending on how close they are to the **focus.point.lon** so that places with higher scores will appear higher in the results list.
+| boundary.rect.min_lon  | floating point number  | 
+| boundary.rect.max_lon  | floating point number  |
+| boundary.rect.min_lat  | floating point number  | 
+| boundary.rect.max_lat	 | floating point number  | 
+| boundary.circle.lat    | floating point number  | Search only inside given circle
+| boundary.circle.lon    | floating point number  | Search only inside given circle
+| boundary.circle.radius | floating point number  | Search only inside given circle
+| sources                | string                 | 
+| layers                 | string                 | Filters results by layer (value can be address, venue or street)
+| boundary.country       | <a href="https://en.wikipedia.org/wiki/ISO_3166-1" target="\_blank">ISO-3166 alpha-2 or alpha-3</a>                  | Filters results by country 
+| lang                   | string                 | Language preference 'fi' or 'sv'.
 
 **Note:** Parameter api_key is not in use in digitransit
 
@@ -96,6 +96,7 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 | label             | string  | A human-friendly representation of the place with the most complete details, that is ready to be displayed to an end user, for example "East-West Pub, Itä-Pasila, Helsinki"
 | bbox              | string  | If present, it describes the geographic extent of the feature, such as the screen size necessary to show all of California without needing to send the precise polygon geometry. 
 
+**Note:** Not exactly the same fields are returned for all searches because all object locations do not have the same data available, for example neighborhood is not in use with all object types.
 
 ## Request examples
 
