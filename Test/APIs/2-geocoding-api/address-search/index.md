@@ -42,7 +42,7 @@ To Read more about Pelias autocomplete API, check:
 ### Search API
 Search API provides a way query addresses and POIs (points of interest). API is available at:
 
-> http://api.digitransit.fi/geocoding/v1/search
+> http://<i></i>api.digitransit.fi/geocoding/v1/search
 
 Supported url parameters:
 | Parameter       | Type           | Description                                              |
