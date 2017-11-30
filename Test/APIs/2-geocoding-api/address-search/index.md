@@ -40,7 +40,7 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 | postalcode_gid    | string  |
 | confidence        | number  | An estimation of how accurately this result matches the query
 | distance          | number  | A distance from the query point (in meters) 
-| accuracy          | string  | Returns always coordinates of just one point. If the object is originally an area or a line like a road, then the centroid is calculated (value can be point or centroid)
+| accuracy          | string  | Returns always coordinates of just one point. If the object is originally an area or a line like a road, then the centroid is calculated (value can be point or centroid).
 | country           | string  | Places that issue passports, nations, nation-states
 | country_gid       | string  |
 | country_a         | string  | Alpha-3 code, for example FIN
@@ -52,7 +52,7 @@ Search API provides a way to query addresses and POIs (points of interest). API 
 | locality_gid      | string  |
 | neighbourhood     | string  | Social communities, neighbourhoods, for example "Itä-Pasila"
 | neighbourhood_gid | string  |
-| label             | string  | A human-friendly representation of the place with the most complete details, that is ready to be displayed to an end user, for example "East-West Pub, Itä-Pasila, Helsinki"
+| label             | string  | A human-friendly representation of the place with the most complete details, that is ready to be displayed to an end user, for example "East-West Pub, Itä-Pasila, Helsinki".
 | bbox              | string  | If present, it describes the geographic extent of the feature, such as the screen size necessary to show all of California without needing to send the precise polygon geometry. 
 
 **Note:** Not exactly the same fields are returned for all searches because all object locations do not have the same data available, for example neighborhood is not in use with all objects.
