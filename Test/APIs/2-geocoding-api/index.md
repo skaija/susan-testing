@@ -1,7 +1,7 @@
 ---
 title: Geocoding API
 ---
-An architectural style called REST (Representational State Transfer) is used with the Geocoding API.
+Unlike the routing API that uses GraphQL, the geocoding API is a traditional REST interface.
 
 Geocoding API provides a way to perform address searches and address lookups (also known as reverse geocoding).
 
