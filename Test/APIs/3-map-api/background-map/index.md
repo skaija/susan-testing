@@ -10,7 +10,7 @@ Background map provides **HSL style** map tiles for example for browser based ap
 **TMS tiles** are available from endpoint: 
 <pre>https://digitransit-prod-cdn-origin.azureedge.net/map/v1/hsl-map/:z/:x/:y:size.png</pre>
 
-**Supported url parameters:**
+## Supported url parameters:
 
 | Parameter     | Type           | Description                                              |
 |---------------|----------------|----------------------------------------------------------|
