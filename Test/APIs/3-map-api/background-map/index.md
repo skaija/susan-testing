@@ -1,7 +1,7 @@
 ---
 title: Background map
 ---
-Background map provides HSL style map tiles for e.g. browser based applications.
+Background map provides **HSL style** map tiles for example for browser based applications.
 
 ## Data format
 
@@ -21,7 +21,7 @@ Background map provides HSL style map tiles for e.g. browser based applications.
 
 ## Examples 
 
-### HSL stype map tiles
+### HSL style map tiles
 
 ![hsl-map-style](http://api.digitransit.fi/hsl-map/16/37311/18963@2x.png)
 
