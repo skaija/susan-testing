@@ -3,18 +3,15 @@ title: Background map
 ---
 Background map provides HSL style map tiles for e.g. browser based applications.
 
-### Example map tile
-To get some idea how these map tiles look, here is an example:
-
-![hsl-map-style](http://api.digitransit.fi/hsl-map/16/37311/18963@2x.png)
-
 ## Data format
-Raster maps are available in [Tile Map Service format](https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification)
 
-TMS tiles are available from endpoint:
+**Raster maps** are available in [Tile Map Service format](https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification)
+
+**TMS tiles** are available from endpoint: 
 <pre>http://api.digitransit.fi/map/v1/hsl-map/:z/:x/:y:size.png</pre>
 
-Supported url parameters:
+**Supported url parameters:**
+
 | Parameter     | Type           | Description                                              |
 |---------------|----------------|----------------------------------------------------------|
 | z             | int            | Zoom level
@@ -22,10 +19,20 @@ Supported url parameters:
 | y             | int            | y-coordinate
 | size          | string         | '@2x' for retina tiles or empty value for normal
 
-Open examples in your browser:
+## Examples 
+
+### HSL stype map tiles
+
+![hsl-map-style](http://api.digitransit.fi/hsl-map/16/37311/18963@2x.png)
+
 > http://api.digitransit.fi/map/v1/hsl-map/16/37313/18958.png
 
 > http://api.digitransit.fi/map/v1/hsl-map/16/37313/18958@2x.png
+
+
+### Replacing hsl-map by hsl-map-sv in the url you can get map tiles with Swedish names 
+
+> https://digitransit-prod-cdn-origin.azureedge.net/map/v1/hsl-map-sv/16/37313/18958.png
 
 ### Display map using Leaflet:
 
