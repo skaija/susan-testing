@@ -41,25 +41,16 @@ Prototype UI that can be used to generate printable maps is available at
 
 ## Related open source projects 
 
-1. Keep up with various specifications<br/>
-   https://github.com/mapbox/tilejson-spec<br/>
-   https://github.com/mapbox/vector-tile-spec<br/>
-   https://github.com/mapbox/mbtiles-spec<br/>
-   https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification<br/>
-   http://geojson.org/
-
-2. Keep up with Tessera development on GitHub<br/>
-   https://github.com/mojodna/tessera
-
-3. Keep up with TileLive development on GitHub<br/>
-   https://github.com/mapbox/tilelive
-
-4. Keep up with TileLive http developement on GitHub<br/>
-   https://github.com/mojodna/tilelive-http
-
-5. Keep up with TileLive xray development on GitHub<br/>
-   https://github.com/mojodna/tilelive-xray
-
-6. Follow OSM2VectorTiles Project<br/>
-   http://osm2vectortiles.org/<br/>
-   https://github.com/osm2vectortiles/osm2vectortiles
+| URL                                                        | Project description                     |
+|------------------------------------------------------------|-----------------------------------------|
+| https://github.com/mapbox/tilejson-spec                    | JSON format for describing map tilesets
+| https://github.com/mapbox/vector-tile-spec                 | Mapbox Vector Tile specification 
+| https://github.com/mapbox/mbtiles-spec                     | MBTiles specification for storing tiled map data in SQLite databases for immediate usage and for transfer
+| https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification | Tile Map Service Specification
+| https://geojson.org/                                       | GeoJSON format for encoding a variety of geographic data structures
+| https://github.com/mojodna/tessera                         | Tessera development on GitHub
+| https://github.com/mapbox/tilelive                         | TileLive development on GitHub
+| https://github.com/mojodna/tilelive-http                   | TileLive http developement on GitHub
+| https://github.com/mojodna/tilelive-xray                   | TileLive xray development on GitHub
+| https://osm2vectortiles.org/                               | OSM2VectorTiles Project
+| https://github.com/osm2vectortiles/osm2vectortiles         | OSM2VectorTiles development on GitHub
