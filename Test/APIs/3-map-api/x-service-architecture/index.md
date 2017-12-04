@@ -29,10 +29,6 @@ HSL map style is available in https://github.com/HSLdevcom/hsl-map-style.git
 
 [Readme file](https://github.com/HSLdevcom/hsl-map-style/blob/master/README.md) contains information how to run map style on local machine.
 
-## HSL map generator UI
-Prototype UI that can be used to generate printable maps is available at
-> https://github.com/HSLdevcom/hsl-map-generator-ui
-
 ## Service dependencies
 | Asset                  |  Url                                                        |
 |------------------------|-------------------------------------------------------------|
