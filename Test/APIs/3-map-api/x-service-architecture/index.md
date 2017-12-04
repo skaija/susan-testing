@@ -15,9 +15,10 @@ assets:
 docker:
   dockerfile: https://github.com/HSLdevcom/hsl-map-server/blob/master/Dockerfile
   imageName: hsldevcom/hsl-map-server
-  buildScript: https://github.com/HSLdevcom/hsl-map-server/blob/master/build-docker-image.sh
+  buildScript: https://github.com/HSLdevcom/hsl-map-server/blob/master/travis-build.sh
   runContainer: docker run -d -p 8080:8080 -e FONTSTACK_PASSWORD={add password here} --name hsl-map-server hsldevcom/hsl-map-server
   accessContainer: http://localhost:8080/hsl-map/16/37313/18958.png
+  Travis build: hsl-map-server 
 ---
 
 
@@ -35,10 +36,11 @@ Prototype UI that can be used to generate printable maps is available at
 ## Service dependencies
 | Asset                  |  Url                                                        |
 |------------------------|-------------------------------------------------------------|
-| Routing - API          | http://digitransit.fi/developers/routing-api/
+| Routing - API          | https://digitransit.fi/en/developers/apis/1-routing-api/
 | HSL park and ride API  | https://www.hsl.fi/en/information/park-and-ride
 
-## Key service delivery activities
+## Related open source projects 
+
 1. Keep up with various specifications<br/>
    https://github.com/mapbox/tilejson-spec<br/>
    https://github.com/mapbox/vector-tile-spec<br/>
