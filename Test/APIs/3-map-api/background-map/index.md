@@ -23,17 +23,17 @@ Background map provides **HSL style** map tiles for example for browser based ap
 
 ### HSL style map tiles
 
-![hsl-map-style](http://api.digitransit.fi/hsl-map/16/37311/18963@2x.png)
-
 > https://digitransit-prod-cdn-origin.azureedge.net/map/v1/hsl-map/16/37313/18958.png
 
 > https://digitransit-prod-cdn-origin.azureedge.net/map/v1/hsl-map/16/37313/18958@2x.png
+
+![hsl-map-style](http://api.digitransit.fi/hsl-map/16/37311/18963@2x.png)
 
 ### Replacing hsl-map by hsl-map-sv in the url you can get map tiles with Swedish names 
 
 > https://digitransit-prod-cdn-origin.azureedge.net/map/v1/hsl-map-sv/16/37313/18958.png
 
-### Display map using Leaflet:
+### Display map using Leaflet
 
 Here is a quick example that uses [Leaflet](http://leafletjs.com/) to display scrollable map.
 
