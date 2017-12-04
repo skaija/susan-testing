@@ -47,10 +47,10 @@ Prototype UI that can be used to generate printable maps is available at
 | https://github.com/mapbox/vector-tile-spec                 | Mapbox Vector Tile specification 
 | https://github.com/mapbox/mbtiles-spec                     | MBTiles specification for storing tiled map data in SQLite databases for immediate usage and for transfer
 | https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification | Tile Map Service Specification
-| https://geojson.org/                                       | GeoJSON format for encoding a variety of geographic data structures
+| http://geojson.org/                                       | GeoJSON format for encoding a variety of geographic data structures
 | https://github.com/mojodna/tessera                         | Tessera development on GitHub
 | https://github.com/mapbox/tilelive                         | TileLive development on GitHub
 | https://github.com/mojodna/tilelive-http                   | TileLive http developement on GitHub
 | https://github.com/mojodna/tilelive-xray                   | TileLive xray development on GitHub
-| https://osm2vectortiles.org/                               | OSM2VectorTiles Project
+| http://osm2vectortiles.org/                               | OSM2VectorTiles Project
 | https://github.com/osm2vectortiles/osm2vectortiles         | OSM2VectorTiles development on GitHub
