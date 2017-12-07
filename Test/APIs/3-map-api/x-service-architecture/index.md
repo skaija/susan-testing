@@ -23,11 +23,12 @@ docker:
 
 
 ## Exploring HSL map style
-![hsl-map-style](http://api.digitransit.fi/hsl-map/16/37311/18963@2x.png)
 
 HSL map style is available in https://github.com/HSLdevcom/hsl-map-style.git
 
 [Readme file](https://github.com/HSLdevcom/hsl-map-style/blob/master/README.md) contains information how to run map style on local machine.
+
+![hsl-map-style](http://api.digitransit.fi/hsl-map/16/37311/18963@2x.png)
 
 ## Service dependencies
 | Asset                  |  Url                                                        |
