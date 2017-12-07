@@ -24,7 +24,7 @@ docker:
 
 ## Exploring HSL map style
 
-HSL map style is available in https://github.com/HSLdevcom/hsl-map-style.git
+HSL map style is available at https://github.com/HSLdevcom/hsl-map-style.git
 
 [Readme file](https://github.com/HSLdevcom/hsl-map-style/blob/master/README.md) contains information how to run map style on local machine.
 
