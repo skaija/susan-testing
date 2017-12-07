@@ -21,13 +21,17 @@ Background map provides **HSL style** map tiles for example for browser based ap
 
 ## Examples 
 
+### An example of how these map tiles look like:
+
+![hsl-map-style](http://digitransit-prod-cdn-origin.azureedge.net/hsl-map/16/37311/18963@2x.png)
+
 ### HSL style map tiles
 
 > https://digitransit-prod-cdn-origin.azureedge.net/map/v1/hsl-map/16/37313/18958.png
 
-> https://digitransit-prod-cdn-origin.azureedge.net/map/v1/hsl-map/16/37313/18958@2x.png
+### HSL style map tiles with size '@2x' for retina tiles or empty value for normal
 
-![hsl-map-style](http://api.digitransit.fi/hsl-map/16/37311/18963@2x.png)
+> https://digitransit-prod-cdn-origin.azureedge.net/map/v1/hsl-map/16/37313/18958@2x.png
 
 ### Replacing hsl-map by hsl-map-sv in the url you can get the map tiles with Swedish names 
 
