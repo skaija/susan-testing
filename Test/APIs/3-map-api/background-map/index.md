@@ -33,9 +33,9 @@ Background map provides **HSL style** map tiles for example for browser based ap
 
 > https://digitransit-prod-cdn-origin.azureedge.net/map/v1/hsl-map-sv/16/37313/18958.png
 
-### Display map using a leaflet
+### Display map using Leaflet
 
-Here is a quick example that uses a [Leaflet](http://leafletjs.com/) to display scrollable map.
+Here is a quick example that uses [Leaflet](http://leafletjs.com/) to display scrollable map.
 
 ``` html
 <!doctype html>
