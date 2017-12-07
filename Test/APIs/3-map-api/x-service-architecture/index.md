@@ -36,7 +36,7 @@ HSL map style is available in https://github.com/HSLdevcom/hsl-map-style.git
 | HSL park and ride API  | https://www.hsl.fi/en/information/park-and-ride
 | HSL Ticket Sales       | https://data-hslhrt.opendata.arcgis.com/datasets/
 
-**Note:** HSL Ticket Sales is not really an API but data that is updated manually. The exact file:
+**Note:** HSL Ticket Sales is not really an API but data that gets updated manually. The exact file is available at:
 
 http://data.hslhrt.opendata.arcgis.com/datasets/42045a8235114dc8bf417df0a1a89edd_0.geojson
 
