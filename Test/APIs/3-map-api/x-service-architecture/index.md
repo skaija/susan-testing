@@ -34,6 +34,9 @@ HSL map style is available in https://github.com/HSLdevcom/hsl-map-style.git
 |------------------------|-------------------------------------------------------------|
 | Routing - API          | https://digitransit.fi/en/developers/apis/1-routing-api/
 | HSL park and ride API  | https://www.hsl.fi/en/information/park-and-ride
+| HSL Ticket Sales       | http://data-hslhrt.opendata.arcgis.com/datasets/
+
+**Note:** HSL Ticket Sales is not really an API but manually updated data. 
 
 ## Related open source projects 
 
