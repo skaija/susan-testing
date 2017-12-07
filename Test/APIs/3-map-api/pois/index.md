@@ -2,6 +2,8 @@
 title: Points of interest
 ---
 
+Points of interest API provides vector map tiles that can be displayed on top of background raster map.
+
 ## Data format
 
 **Vector maps** are available in [Mapbox Vector Tile format](https://github.com/mapbox/vector-tile-spec)
