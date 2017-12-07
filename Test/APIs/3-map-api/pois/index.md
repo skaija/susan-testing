@@ -8,7 +8,7 @@ title: Points of interest
 
 **Vector tiles** are available from endpoint:
 
-<pre>https://digitransit-prod-cdn-origin.azureedge.net/map/v1:source}/:z/:x/:y.pbf</pre>
+<pre>https://digitransit-prod-cdn-origin.azureedge.net/map/v1/source/:z/:x/:y.pbf</pre>
 
 ## Supported url parameters
 
