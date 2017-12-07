@@ -18,7 +18,7 @@ docker:
   buildScript: https://github.com/HSLdevcom/hsl-map-server/blob/master/travis-build.sh
   runContainer: docker run -d -p 8080:8080 -e FONTSTACK_PASSWORD={add password here} --name hsl-map-server hsldevcom/hsl-map-server
   accessContainer: http://localhost:8080/hsl-map/16/37313/18958.png
-  Travis build: hsl-map-server 
+  travisBuild: hsl-map-server 
 ---
 
 
