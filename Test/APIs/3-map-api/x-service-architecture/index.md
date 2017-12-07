@@ -38,7 +38,7 @@ HSL map style is available in https://github.com/HSLdevcom/hsl-map-style.git
 
 **Note:** HSL Ticket Sales is not really an API but data that is updated manually. The exact file:
 
-https://data.hslhrt.opendata.arcgis.com/datasets/42045a8235114dc8bf417df0a1a89edd_0.geojson
+http://data.hslhrt.opendata.arcgis.com/datasets/42045a8235114dc8bf417df0a1a89edd_0.geojson
 
 ## Related open source projects 
 
