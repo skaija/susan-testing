@@ -2,7 +2,7 @@
 title: Points of interest
 ---
 
-Points of interest API provides vector map tiles that can be displayed on top of background raster map.
+This API provides vector map tiles for points of interests like ticket sales positions, city bike stations and park and ride areas. They can be displayed on top of the background raster map.
 
 ## Data format
 
