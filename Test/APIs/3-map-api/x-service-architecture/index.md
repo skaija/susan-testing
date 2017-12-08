@@ -28,6 +28,8 @@ HSL map style is available at https://github.com/HSLdevcom/hsl-map-style.git
 
 [Readme file](https://github.com/HSLdevcom/hsl-map-style/blob/master/README.md) contains information of how to run map style on local machine.
 
+HSL map stype example
+
 ![hsl-map-style](http://api.digitransit.fi/hsl-map/16/37311/18963@2x.png)
 
 ## Service dependencies
