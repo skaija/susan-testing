@@ -2,15 +2,21 @@
 title: Trip updates
 description:
   info: The main function of Siri2gtfsrt is to convert data from SIRI (Service Interface for Real Time Information) format to GTFS-realtime format. In addition to this the service also blends in selected data from existing GTFS-realtime feeds.
+  
+  Raildigitraffic2gtfsrt that is for internal use only retrieves data from the open api of The Finnish Transport Agency and converts this data to GTFS-realtime.
   architecture: https://raw.githubusercontent.com/HSLdevcom/digitransit-site/master/pages/en/developers/apis/4-realtime-api/trip-updates/architecture.xml
 assets:
   source: https://github.com/HSLdevcom/siri2gtfsrt
+  https://github.com/HSLdevcom/raildigitraffic2gtfsrt
   dockerHub: https://hub.docker.com/r/hsldevcom/siri2gtfsrt/
+  https://hub.docker.com/r/hsldevcom/raildigitraffic2gtfsrt/
   Dockerfile: https://github.com/HSLdevcom/siri2gtfsrt/blob/master/Dockerfile
+  https://github.com/HSLdevcom/raildigitraffic2gtfsrt/blob/master/Dockerfile
 technologies:  
   "SIRI": "http://user47094.vs.easily.co.uk/siri/"
   "GTFS-RT": "https://developers.google.com/transit/gtfs-realtime/"
   "Python": null
+  "Finnish Transport Agency API": http://rata.digitraffic.fi/api/v1/doc/index.html
 docker:
   dockerfile: https://github.com/HSLdevcom/siri2gtfsrt/blob/master/Dockerfile
   imageName: hsldevcom/siri2gtfsrt
