@@ -1,8 +1,7 @@
 ---
 title: Trip updates
 description:
-  info: The main function of Siri2gtfsrt is to convert data from SIRI (Service Interface for Real Time Information) format to GTFS-realtime format. In addition to this the service also blends in selected data from existing GTFS-realtime feeds.
-  
+  info: The main function of Siri2gtfsrt is to convert data from SIRI (Service Interface for Real Time Information) format to GTFS-realtime format. In addition to this the service also blends in selected data from existing GTFS-realtime feeds.  
   Raildigitraffic2gtfsrt that is for internal use only retrieves data from the open api of The Finnish Transport Agency and converts this data to GTFS-realtime.
   architecture: https://raw.githubusercontent.com/HSLdevcom/digitransit-site/master/pages/en/developers/apis/4-realtime-api/trip-updates/architecture.xml
 assets:
