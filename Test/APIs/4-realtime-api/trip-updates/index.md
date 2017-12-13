@@ -53,13 +53,20 @@ Currently the service offers two GTFS-realtime data feeds filled with [trip upda
 More GTFS-rt programming examples from [Google](https://developers.google.com/transit/gtfs-realtime/examples/code-samples).
 
 ## Service dependencies
-Siri2gtfsrt uses the following Digitransit data sources:
+
+### Siri2gtfsrt uses the following Digitransit data sources:
 
 | Data source        | Description                                                  |
 |--------------------|--------------------------------------------------------------|
 | hslalert           | Real-time updates about HSL fleet in GTFS-RT format
-| digitraffic2gtfsrt | Retrieves data from the open api of The Finnish Transport Agency and converts this data to GTFS-realtime. Note! this is for internal use only.
+| digitraffic2gtfsrt | Retrieves data from the open api of The Finnish Transport Agency and converts this data to GTFS-realtime 
 | navigatorserver    | Snapshot of the current real-time vehicle location data
+
+### Raildigitraffic2gtfsrt the following Digitransit data source (for internal use only)
+
+| Data source        | Description                                                  |
+|--------------------|--------------------------------------------------------------|
+| route-server       | static gtfs feeds
 
 ## Related open source projects
 
@@ -68,3 +75,4 @@ Siri2gtfsrt uses the following Digitransit data sources:
 | https://github.com/HSLdevcom/hslalert                 | HSLAlert development 
 | https://developers.google.com/transit/                | Google transit community
 | https://groups.google.com/forum/#!forum/gtfs-realtime | Google transit forum
+| https://github.com/pailakka/raildigitraffic2gtfsrt    | raildigitraffic2gtfsrt development
