@@ -1,10 +1,12 @@
 ---
-title: Realtime APIs
+title: Real-time APIs
 ---
 
-Let's start with this: Our Real time API is not ready, it should be considered more like proof of concept. Now, when that is said, we encourage you to try it out!
+Our real-time APIs are not quite ready yet so they should be considered more like a proof of concept. We encourage you to try it out, but just keep that in mind.
 
-First, read [getting started guide](./1-getting-started/) to better understand limitations and possibilities.
+At first you should read the Realtime API [getting started guide](./1-getting-started/) to better understand limitations and possibilities.
 
-Then, checkout out more about [service alerts](./service-alerts/), [trip updates](./trip-updates/), [trip updates - trains](./trip-updates-trains/), and [vehicle positions](./vehicle-positions/)
-
+It is also recommended to read the pages below to get familiar with the real-time APIs:
+[service alerts](./service-alerts/)
+[trip updates](./trip-updates/)
+[vehicle positions](./vehicle-positions/)
