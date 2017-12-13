@@ -16,43 +16,42 @@ Sometimes public transport does not work according to timetables. Vehicles may a
 
 ### GTFS-Realtime
 
-[GTFS-Realtime](https://developers.google.com/transit/gtfs-realtime/) (or GTFS-RT) is a standard for transportation agencies to provide realtime updates about their fleet.
-It provides three kinds of feeds:
+[GTFS-Realtime](https://developers.google.com/transit/gtfs-realtime/) (or GTFS-RT) provides three kinds of feeds:
 
-- [Trip updates](https://developers.google.com/transit/gtfs-realtime/trip-updates)
-- [Service alerts](https://developers.google.com/transit/gtfs-realtime/service-alerts)
-- [Vehicle positions](https://developers.google.com/transit/gtfs-realtime/vehicle-positions)
+- [Trip updates](https://developers.google.com/transit/gtfs-realtime/guides/trip-updates)
+- [Service alerts](https://developers.google.com/transit/gtfs-realtime/guides/service-alerts)
+- [Vehicle positions](https://developers.google.com/transit/gtfs-realtime/guides/vehicle-positions)
 
 Our goal is to provide GTFS-RT feeds for you.
 
 ## About the API
-Heavy lifting of realtime data is done in other systems. Digitransit integrates itself to various datasources in order
-to read realtime data from the vehicles. How this is done depends on which region we are talking about.
+Heavy lifting of real-time data is done in other systems. Digitransit integrates itself to various datasources in order
+to read real-time data from the vehicles. How this is done depends on which region we are talking about.
 
 ![Modules](./architecture.svg)
 
-### Realtime predictions are available in Routing API
-Realtime data is read into the [Routing API](../../1-routing-api/). This means that Routing API returns results that contain
+### Real-time predictions are available in Routing API
+Real-time data is read into the [Routing API](../../1-routing-api/). This means that Routing API returns results that contain
 predictions. Read more in Routing API docs.
 
 ### Situation in HSL
 Current Digitransit implementation is a "partially working solution" built on top of legacy APIs. This means that:
-- Not all vehicles have realtime information available
-- There might be mysterious bugs lurking in realtime the data
+- Not all vehicles have real-time information available
+- There might be mysterious bugs lurking in real-time the data
 
 Note that this is not the final solution. In the near future new ticketing and information system will replace all
-legacy components related to HSL realtime. This transition will improve situation considerably. Read more at:
+legacy components related to HSL real-time. This transition will improve situation considerably. Read more at:
 > https://www.hsl.fi/lippu-ja-informaatiojarjestelma
 
-If you are really intrested in implementing some realtime features, you should look at
+If you are really intrested in implementing some real-time features, you should look at
 [Digitransit-ui](../../5-digitransit-ui/) and it's [source code](https://github.com/HSLdevcom/digitransit-ui). That way
-you can get idea how realtime is used there.
+you can get idea how real-time is used there.
 
 ## Situation in Finnish Transport Agency
-Currently, FTA provides realtime information for trains at http://rata.digiraffic.fi . We have a simple wrapper
+Currently, FTA provides real-time information for trains at http://rata.digiraffic.fi . We have a simple wrapper
 (raildigiraffic2gtfsrt) that transforms that data to GTFS-RT trip updates.
 
-Finnish Transport Agency is investigating possibility to build National realtime service which would collect realtime
+Finnish Transport Agency is investigating possibility to build National real-time service which would collect real-time
 data from all around the Finland.
 
 ## Situation in other cities
