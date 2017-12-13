@@ -5,8 +5,8 @@ description:
   architecture: https://raw.githubusercontent.com/HSLdevcom/digitransit-site/master/pages/en/developers/apis/4-realtime-api/trip-updates/architecture.xml
 assets:
   source: https://github.com/HSLdevcom/siri2gtfsrt https://github.com/HSLdevcom/raildigitraffic2gtfsrt
-  dockerHub: https://hub.docker.com/r/hsldevcom/siri2gtfsrt/
-  Dockerfile: https://github.com/HSLdevcom/siri2gtfsrt/blob/master/Dockerfile
+  dockerHub: https://hub.docker.com/r/hsldevcom/siri2gtfsrt/ https://hub.docker.com/r/hsldevcom/raildigitraffic2gtfsrt/
+  Dockerfile: https://github.com/HSLdevcom/siri2gtfsrt/blob/master/Dockerfile https://github.com/HSLdevcom/raildigitraffic2gtfsrt/blob/master/Dockerfile
 technologies:  
   "SIRI": "http://user47094.vs.easily.co.uk/siri/"
   "GTFS-RT": "https://developers.google.com/transit/gtfs-realtime/"
