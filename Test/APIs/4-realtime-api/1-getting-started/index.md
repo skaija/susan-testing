@@ -37,7 +37,7 @@ predictions. Read more in Routing API docs.
 ### Situation in HSL
 Current Digitransit implementation is a "partially working solution" built on top of legacy APIs. This means that:
 - Not all vehicles have real-time information available
-- There might be mysterious bugs lurking in real-time the data
+- There might be mysterious bugs lurking in the real-time data
 
 Note that this is not the final solution. In the near future new ticketing and information system will replace all
 legacy components related to HSL real-time. This transition will improve situation considerably. Read more at:
