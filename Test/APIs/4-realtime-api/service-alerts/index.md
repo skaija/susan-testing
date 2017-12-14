@@ -65,12 +65,10 @@ More examples from [Google](https://developers.google.com/transit/gtfs-realtime/
 ## Service dependencies
 No Digitransit related service dependencies. Reads data from http://www.poikkeusinfo.fi/xml/v3
 
-## Key service delivery activities
+## Related open source projects
 
-
-1. Keep up with HSLAlerts upstream development (there probably won't happen much)
-> https://github.com/samuelmr/hslalert
-2. Follow Google transit community and its mailing lists (especially GTFS-RT):
-> https://developers.google.com/transit/community?hl=en
-
-> https://groups.google.com/forum/#!forum/gtfs-realtime
+| URL                | Project description                                          |
+|--------------------|--------------------------------------------------------------|
+| https://github.com/samuelmr/hslalert                 | HSLAlerts upstream development (there probably won't happen much) 
+| https://developers.google.com/transit/                | Google transit community (especially GTFS-RT)
+| https://groups.google.com/forum/#!forum/gtfs-realtime | Google transit forum
