@@ -31,21 +31,21 @@ to read real-time data from the vehicles. How this is done depends on which regi
 ![Modules](./architecture.svg)
 
 ### Real-time predictions are available in Routing API
-Real-time data is read into the [Routing API](../../1-routing-api/). This means that Routing API returns results that contain
-predictions. Read more in Routing API docs.
+Real-time data is read into the Routing API. This means that Routing API returns results that contain
+predictions. You can read more about that at the [Routing API](../../1-routing-api/) pages.
 
 ### Situation in HSL
 Current Digitransit implementation is a "partially working solution" built on top of legacy APIs. This means that:
 - Not all vehicles have real-time information available
-- There might be mysterious bugs lurking in the real-time data
+- There might be somw bugs in the real-time data
 
-Note that this is not the final solution. In the near future new ticketing and information system will replace all
+**Note:** This is not the final solution. In the near future new ticketing and information system will replace all
 legacy components related to HSL real-time. This transition will improve situation considerably. Read more at:
 > https://www.hsl.fi/lippu-ja-informaatiojarjestelma
 
-If you are really intrested in implementing some real-time features, you should look at
+If you are really interested in implementing some real-time features, you should look at
 [Digitransit-ui](../../5-digitransit-ui/) and it's [source code](https://github.com/HSLdevcom/digitransit-ui). That way
-you can get idea how real-time is used there.
+you can get an idea how real-time is used there.
 
 ## Situation in Finnish Transport Agency
 Currently, FTA provides real-time information for trains at https://rata.digitraffic.fi/api/v1/doc/index.html. We have a simple wrapper
@@ -55,5 +55,4 @@ Finnish Transport Agency is investigating possibility to build National real-tim
 data from all around the Finland.
 
 ## Situation in other cities
-We don't have that much control over other cities and the data they provide. We have integrated e.g. data from Oulu
-just to see how it behaves.
+We don't have that much control over other cities and the data they provide but we have integrated data from Oulu for example, just to see how it behaves.
