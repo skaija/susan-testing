@@ -60,7 +60,7 @@ request(req, function (error, response, body) {
   }
 ```
 
-More examples from [Google](https://developers.google.com/transit/gtfs-realtime/code-samples).
+More examples from [Google](https://developers.google.com/transit/gtfs-realtime/examples/code-samples).
 
 ## Service dependencies
 No Digitransit related service dependencies. Reads data from http://www.poikkeusinfo.fi/xml/v3
