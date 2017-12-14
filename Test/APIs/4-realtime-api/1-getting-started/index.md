@@ -55,4 +55,4 @@ Finnish Transport Agency is investigating possibility to build National real-tim
 data from all around the Finland.
 
 ## Situation in other cities
-We don't have that much control over other cities and the data they provide but we have integrated data from Oulu for example, just to see how it behaves.
+We don't have much control over other cities and the data they provide but we have integrated data from Oulu for example, just to see how it behaves.
