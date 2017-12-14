@@ -48,7 +48,7 @@ If you are really intrested in implementing some real-time features, you should 
 you can get idea how real-time is used there.
 
 ## Situation in Finnish Transport Agency
-Currently, FTA provides real-time information for trains at http://rata.digiraffic.fi . We have a simple wrapper
+Currently, FTA provides real-time information for trains at https://rata.digitraffic.fi/api/v1/doc/index.html. We have a simple wrapper
 (raildigiraffic2gtfsrt) that transforms that data to GTFS-RT trip updates.
 
 Finnish Transport Agency is investigating possibility to build National real-time service which would collect real-time
