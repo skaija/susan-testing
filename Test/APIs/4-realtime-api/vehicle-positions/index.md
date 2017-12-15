@@ -52,11 +52,10 @@ The api url structure follows the topic names in the HSL-MQTT-API-draft. See [HS
 
 ### Retrieve the last known position for tram 9
 
-First we need to locate the vehicle identifier for the tram number 9. You can use [This app](http://htmlpreview.github.io/?https://gist.githubusercontent.com/siren/459db18bf4b128df0555/raw)
-locate the identifier. The app reads current information from digitransit graphql api and lets you filter through it.
+At first you will need to locate the vehicle identifier for the tram number 9. You can use [This app](http://htmlpreview.github.io/?https://gist.githubusercontent.com/siren/459db18bf4b128df0555/raw) to locate the identifier. The app reads the current information from digitransit graphql api and lets you filter through it.
 
-Ok now that we found out that tram 9 had gtfsId of <strong>HSL:1009</strong> we can just skip the prefix (HSL:) and use this
-id to construct the url based on the information on the HSL-MQTT-API-draft:
+After you have found out that the tram 9 has gtfsId of <strong>HSL:1009</strong> you can just skip the prefix (HSL:) and use the
+id 1009 to construct the url based on the information on the HSL-MQTT-API-draft:
 > curl http://api.digitransit.fi/realtime/vehicle-positions/v1/hfp/journey/+/+/1009/
 
 ### Display all tram 9s on map
