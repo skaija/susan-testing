@@ -19,12 +19,11 @@ technologies:
 ---
 
 
-Navigator server connects to HSL Live server (Real-time API of gigh frequency positioning) and consumes messages about vehicle
+Navigator server connects to HSL Live server (Real-time API of high frequency positioning) and consumes messages about vehicle
 locations in real-time. This information is stored in memory and provided to clients requesting for it.
 
 The provided information can be used to draw vehicles on map. To draw real-time updates to the vehicle locations on map
 one should subscribe to mgtt (see the HSL-MQTT-API-draft link in the technologies section).
-
 
 ## API Documentation
 The api url structure follows the topic names in the HSL-MQTT-API-draft. See [HSL-MQTT-API-draft](https://digipalvelutehdas.hackpad.com/HSL-MQTT-API-draft) for more info.
@@ -38,12 +37,13 @@ The api url structure follows the topic names in the HSL-MQTT-API-draft. See [HS
 |------------|--------------------------------------------------------|
 | desi       | designation (route/line number as shown to passengers) |
 | oday       | operating day (day of departure)                       |
-| tsi and tst| timestamp                                              |
-| dl         | delay (difference to timetable)                        |
+| tsi        | timestamp in seconds                                   |
+| tst        | timestamp in ISO8861 format                            |
+| dl         | delay in seconds (s); difference to timetable          |
 | lat, long  | coordinates                                            |
-| hdg        | heading                                                |
-| odo        | odometer                                               |
-| spd        | speed                                                  |
+| hdg        | heading in degrees (⁰)                                 |
+| odo        | odometer in meters                                     |
+| spd        | speed in meters per seconds (m/s)                      |
 
 ## Examples
 
@@ -101,6 +101,11 @@ id to construct the url based on the information on the HSL-MQTT-API-draft:
 ## Service dependencies
 Navigator-server does not use any digitransit data sources, it retrieves the data from HSL Live server
 
-## Key service delivery activities
-1. Keep up with HSL-MQTT-API<br/>
-   https://digipalvelutehdas.hackpad.com/HSL-MQTT-API-draft
+## Related open source projects
+
+| URL                                                       | Project description                                    |
+|-----------------------------------------------------------|--------------------------------------------------------|
+| https://github.com/HSLdevcom/navigator-server             | HSL high frequency positioning development
+| https://digipalvelutehdas.hackpad.com/HSL-MQTT-API-draft  | HSL-MQTT-API 
+| https://developers.google.com/transit/                    | Google transit community
+| https://groups.google.com/forum/#!forum/gtfs-realtime     | Google transit forum
