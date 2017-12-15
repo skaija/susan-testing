@@ -26,7 +26,24 @@ The provided information can be used to draw vehicles on map. To draw real-time 
 one should subscribe to mgtt (see the HSL-MQTT-API-draft link in the technologies section).
 
 ## API Documentation
-The api url structure follows the topic names in the HSL-MQTT-API-draft. See [HSL-MQTT-API-draft](https://digipalvelutehdas.hackpad.com/HSL-MQTT-API-draft) for more info.
+
+HSL provides an open MQTT API for a publish-subscribe access to vehicle movements in real-time. All vehicles should publish a message once per second, and mobile apps can subscribe to receive the messages that are relevant to them based on mode of transport, route/line number, map region etc. The syntax that specifies a subscription and that filters the messages is the MQTT topic structure of the API.
+
+### MQTT topic format
+
+/hfp/journey/type/id/line/direction/headsign/start_time/next_stop/(geohash_level)/geohash/#
+
+| Attribute       | Decription                                             |
+|-----------------|--------------------------------------------------------|
+| type            | One of bus, rail, subway, tram, ferry
+| id              | Unique id of the vehicle
+| line            | Unique id of the route/line
+| direction       | One of 1 or 2
+| headsign        | Destination name, e.g. Aviapolis
+| start_time      | HHmm
+| next_stop       | Unique id of the stop/station
+| (geohash_level) | Significance of the change compared to previous message - which decimal place changed
+| geohash         | Map tile coordinates, more decimals specifies a smaller tile
 
 ## Endpoint
 <pre>http://api.digitransit.fi/realtime/vehicle-positions/v1/</pre>
@@ -93,9 +110,25 @@ id 1009 to construct the url based on the information on the HSL-MQTT-API-draft:
 ```
 [Show example on browser](http://htmlpreview.github.io/?https://gist.githubusercontent.com/siren/e77696cb5b7c9cd7095c/raw)
 
-
 ### Retrieve real-time updates in json/SIRI format
 > curl http://api.digitransit.fi/realtime/vehicle-positions/v1/siriaccess/vm/json
+
+### Subscribe everything,  '+' sign is MQTT wildcard for one level of topic hierarchy:
+mqtt sub -v -h mqtt.hsl.fi -p 1883 -t '/hfp/journey/+/+/+/+/+/+/+/+/+/#'
+
+### Subscribe everything,  '#' sign is MQTT wildcard for any remaining levels of topic hierarchy:
+mqtt sub -v -h mqtt.hsl.fi -p 1883 -t '/hfp/journey/#'
+
+### Subscribe to all trams:
+mqtt sub -v -h mqtt.hsl.fi -p 1883 -t '/hfp/journey/tram/#'
+
+### Get bus line 611 (4611 == the "JORE" id of the bus line: disambiguation prefix (City of Vantaa is 4) + line number)
+mqtt sub -v -h mqtt.hsl.fi -p 1883 -t '/hfp/journey/bus/+/4611/#'
+
+### Subscribe to all movement within a geohash map tile (60.1xxx, 24.9xxx) "60;24/19"
+The format of the geohash portion is lat0;long0/lat1long1/lat2long2/... [integer latitude];[integer longitude]/[first decimal of latitude][first decimal of longitude]/[second decimal of latitude][second decimal of longitude]/ etc. You can specify 0 to 3 decimal places.
+
+mqtt sub -v -h mqtt.hsl.fi -p 1883 -t '/hfp/journey/+/+/+/+/+/+/+/60;24/19/#'
 
 ## Service dependencies
 Navigator-server does not use any digitransit data sources, it retrieves the data from HSL Live server
@@ -106,5 +139,7 @@ Navigator-server does not use any digitransit data sources, it retrieves the dat
 |-----------------------------------------------------------|--------------------------------------------------------|
 | https://github.com/HSLdevcom/navigator-server             | HSL high frequency positioning development
 | https://digipalvelutehdas.hackpad.com/HSL-MQTT-API-draft  | HSL-MQTT-API 
+| http://dev.hsl.fi/tmp/mqtt/browser/                       | View source
+| http://dev.hsl.fi/tmp/mqtt/map/                           | View map (Try changing the topic in the address bar)
 | https://developers.google.com/transit/                    | Google transit community
 | https://groups.google.com/forum/#!forum/gtfs-realtime     | Google transit forum
