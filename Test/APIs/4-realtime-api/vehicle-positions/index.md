@@ -138,10 +138,13 @@ Navigator server does not use any digitransit data sources, it retrieves the dat
 
 ## Related open source projects and other useful urls
 
-| URL                                                       | Project description                                    |
+| URL                                                       | Description                                            |
 |-----------------------------------------------------------|--------------------------------------------------------|
 | https://github.com/HSLdevcom/navigator-server             | HSL high frequency positioning development
-|    |   
+| mqtt://mqtt.hsl.fi:1883/                                  | HSL MQTT API URL, direct MQTT connection over TCP, very lightweight
+| ws://mqtt.hsl.fi:1883/                                    | HSL MQTT API URL, MQTT connection on top of Websockets, works in web browsers
+| https://www.npmjs.com/package/mqtt                        | MQTT CLIENT, javascript library and command line client
+| https://github.com/PasiSalenius/LightMQTT                 | Swift library
 | http://dev.hsl.fi/tmp/mqtt/browser/                       | View source
 | http://dev.hsl.fi/tmp/mqtt/map/                           | View map (Try changing the topic in the address bar)
 | https://developers.google.com/transit/                    | Google transit community
