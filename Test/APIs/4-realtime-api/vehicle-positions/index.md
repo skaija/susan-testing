@@ -1,8 +1,8 @@
 ---
-title: Vehicle positions
+title: High frequency positioning
 description:
-  info: "Navigator server provides snapshot of current realtime vehicle location data. Data is provided in two separate formats: json/SIRI and in custom json format."
-  architecture: https://raw.githubusercontent.com/HSLdevcom/digitransit-site/master/pages/en/developers/service-catalogue/internal-components/navigator-server/architecture.xml
+  info: "Navigator server provides snapshot of the current real-time vehicle location data. Data is provided in two separate formats: json/SIRI and in custom json format."
+  architecture: https://raw.githubusercontent.com/HSLdevcom/digitransit-site/master/pages/en/developers/apis/4-realtime-api/vehicle-positions/architecture.xml
 docker:
   dockerfile: https://github.com/HSLdevcom/navigator-server/blob/master/Dockerfile
   imageName: hsldevcom/navigator-server
@@ -19,10 +19,10 @@ technologies:
 ---
 
 
-Navigator server connects to HSL Live server (Realtime API of vehicle locations) and consumes messages about vehicle
-locations in realtime. This information is stored in memory and provided to clients requesting for it.
+Navigator server connects to HSL Live server (Real-time API of gigh frequency positioning) and consumes messages about vehicle
+locations in real-time. This information is stored in memory and provided to clients requesting for it.
 
-The provided information can be used to draw vehicles on map. To draw realtime updates to the vehicle locations on map
+The provided information can be used to draw vehicles on map. To draw real-time updates to the vehicle locations on map
 one should subscribe to mgtt (see the HSL-MQTT-API-draft link in the technologies section).
 
 
@@ -95,7 +95,7 @@ id to construct the url based on the information on the HSL-MQTT-API-draft:
 [Show example on browser](http://htmlpreview.github.io/?https://gist.githubusercontent.com/siren/e77696cb5b7c9cd7095c/raw)
 
 
-### Retrieve realtime updates in json/SIRI format
+### Retrieve real-time updates in json/SIRI format
 > curl http://api.digitransit.fi/realtime/vehicle-positions/v1/siriaccess/vm/json
 
 ## Service dependencies
