@@ -31,11 +31,11 @@ Background map provides **HSL style** map tiles for example for browser based ap
 
 > https://cdn.digitransit.fi/map/v1/hsl-map/16/37313/18958.png
 
-### HSL style map tiles with size '@2x' for retina tiles
+### Retina tiles
 
 > https://cdn.digitransit.fi/map/v1/hsl-map/16/37313/18958@2x.png
 
-### Replacing hsl-map by hsl-map-sv in the url you can get the map tiles with Swedish names 
+### Swedish language tiles 
 
 > https://cdn.digitransit.fi/map/v1/hsl-map-sv/16/37313/18958.png
 
