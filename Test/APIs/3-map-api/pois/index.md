@@ -22,6 +22,17 @@ This API provides vector map tiles for points of interests like ticket sales pos
 | y             | int            | y-coordinate
 | size          | string         | '@2x' for retina tiles or empty value for normal
 
+### Source values
+
+| Value                | Description                                              |
+|----------------------|----------------------------------------------------------|
+| hsl-stop-map         |         
+| hsl-parkandride-map  |
+| waltti-stop-map      |
+| finland-stop-map     |
+| hsl-citybike-map     |
+| hsl-ticket-sales-map |
+
 ## Examples
 
 ### Map tiles address
