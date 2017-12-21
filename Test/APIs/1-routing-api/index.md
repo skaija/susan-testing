@@ -24,4 +24,4 @@ After this, you are ready to run queries for [routes](./routes/), [stops](./stop
 | City bike                             | A shared-use bicycle that can be borrowed for a fee by anyone in central Helsinki. 
 | Bicycling route                       | Route from place A to place B using city bike rental. 
 | Disruption info                       | Information about the current and upcoming disruptions in public transport.
-| Itinerary planning                    | Planning an itinerary from place or location A to place or location B using different modes (BUS, TRAM, RAIL, FERRY, WALK)
+| Itinerary planning                    | Planning an itinerary from place A to place B using different modes (BUS, TRAM, RAIL, FERRY, WALK)
