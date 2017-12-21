@@ -20,8 +20,8 @@ After this, you are ready to run queries for routes, stops, city bikes and bicyc
 | GraphiQL                              | A simple UI for making queries. You can use it both to run queries and to explore the GraphQL schema.
 | Realtime arrival prediction           | API queries can return real-time data for some vehicles. We know vehicle's planned route and it's current location. This information is used to predict when it actually arrives.
 | Route                                 | A public transport service shown to customers under a single name, usually from point A to B and back.
-| Stops                                 | Public transport stops
-| City bikes                            | Shared-use bicycles that can be borrowed for a fee by anyone in central Helsinki. 
-| bicycling route                       | 
-| Disruption info                       | 
-| Itinerary planning                    | 
+| Stop                                  | A public transport stop.
+| City bike                             | A shared-use bicycle that can be borrowed for a fee by anyone in central Helsinki. 
+| Bicycling route                       | Route from place A to place B using city bike rental. 
+| Disruption info                       | Information about the current and upcoming disruptions in public transport.
+| Itinerary planning                    | Plan an itinerary from place or location A to place or location B using different modes (BUS, TRAM, RAIL, FERRY, WALK)
