@@ -10,7 +10,7 @@ At first you should read the [GraphQL](./0-graphql/) and [GraphiQL](./1-graphiql
 
 It is also recommended to read the [Realtime arrival prediction](./2-realtime-arrival-prediction/) page before going any further.
 
-After this, you are ready to run queries for routes, stops, city bikes and bicycling routes, disruption info and do itinerary planning.
+After this, you are ready to run queries for [routes](./routes/), [stops](./stops), [city bikes and bicycling routes](./bicycling/), [disruption info](./disruption-info/) and do [itinerary planning](./itinerary-planning/).
 
 ## Glossary
 
@@ -24,4 +24,4 @@ After this, you are ready to run queries for routes, stops, city bikes and bicyc
 | City bike                             | A shared-use bicycle that can be borrowed for a fee by anyone in central Helsinki. 
 | Bicycling route                       | Route from place A to place B using city bike rental. 
 | Disruption info                       | Information about the current and upcoming disruptions in public transport.
-| Itinerary planning                    | Plan an itinerary from place or location A to place or location B using different modes (BUS, TRAM, RAIL, FERRY, WALK)
+| Itinerary planning                    | Planning an itinerary from place or location A to place or location B using different modes (BUS, TRAM, RAIL, FERRY, WALK)
