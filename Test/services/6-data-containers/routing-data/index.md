@@ -2,7 +2,7 @@
 title: Routing Data
 description:
   info: "Routing Data provides three OpenTripPlanner router zip files: Helsinki region, the Waltti regions, and whole Finland."
-  architecture: https://raw.githubusercontent.com/HSLdevcom/digitransit-site/master/pages/en/developers/service-catalogue/data-containers/routing-data/architecture.xml
+  architecture: https://raw.githubusercontent.com/HSLdevcom/digitransit-site/master/pages/en/developers/services/6-data-containers/routing-data/architecture.xml
 assets:
   source: https://github.com/HSLdevcom/OpenTripPlanner-data-container
   DockerHub: https://hub.docker.com/r/hsldevcom/opentripplanner-data-container-hsl/
