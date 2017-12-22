@@ -5,16 +5,16 @@ title: Frequently asked API related questions
 Table of Contents
 =================
 
-# Routing API
+## Routing API
 * [How to find out more about QueryTypes and their fields and parameters?](#how-to-find-out-more-about-querytypes-and-their-fields-and-parameters)
 * [Why are some routes rendered as straight lines from one stop to the next?](#why-are-some-routes-rendered-as-straight-lines-from-one-stop-to-the-next)
 
-# Geocoding API
+## Geocoding API
   
 
-# Map API
+## Map API
   
-# Real-time API
+## Real-time API
 
 ## Routing API
 
