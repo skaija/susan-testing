@@ -52,7 +52,7 @@ For example, the HSL routing data consists of the following files:
 7. `version.txt`
   A version file that contains a timestamp (for example '2017-08-18T02:32:45.635Z') of the time when the data was processed.
 
-[See how Routing API utilizes these zip files](./apis/routing-api/)
+[See how Routing API utilizes these zip files](../../apis/routing-api/)
 
 ## Key service delivery activities
 1. Keep up with OpenStreetMap blog<br/>
