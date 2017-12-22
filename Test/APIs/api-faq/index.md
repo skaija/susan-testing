@@ -28,4 +28,4 @@ Add the 2nd question and answer here
 ### How to find out more about QueryTypes and their fields and parameters?
 
 If you have any questions related to QueryTypes or their fields and parameters please use the Docs functionality available when using GrphiQL.  
-Navigation: Start GraphiQL > Note Doc link or "Documentation explorer" on the right side of the screen > Click QueryType and find the one you are interested in
+**Navigation:** Start GraphiQL > Note Doc link or "Documentation explorer" on the right side of the screen > Click QueryType and find the one you are interested in
