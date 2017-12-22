@@ -54,12 +54,10 @@ For example, the HSL routing data consists of the following files:
 
 [See how Routing API utilizes these zip files](../../../apis/1-routing-api/)
 
-## Key service delivery activities
-1. Keep up with OpenStreetMap blog<br/>
-   https://blog.openstreetmap.org/
+## Related open source projects
 
-2. Keep up with gtfs_shape_mapfit upstream<br/>
-   https://github.com/tru-hy/gtfs_shape_mapfit
-
-3. Keep up with OneBusAway project<br/>
-   http://onebusaway.org/
+| URL                                         | Project description                     |
+|---------------------------------------------|-----------------------------------------|
+| https://blog.openstreetmap.org/             | OpenStreetMap blog
+| https://github.com/tru-hy/gtfs_shape_mapfit | gtfs_shape_mapfit upstream, fits GTFS shape files to a given OSM map file
+| https://onebusaway.org/                     | OneBusAway project, the open source platform for real-time transit info
