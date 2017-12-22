@@ -9,9 +9,10 @@ assets:
 docker:
   dockerfile: https://github.com/HSLdevcom/OpenTripPlanner-data-container/blob/master/otp-data-container/Dockerfile.data-container
   imageName: hsldevcom/opentripplanner-data-container-hsl
-  buildScript: https://github.com/HSLdevcom/OpenTripPlanner-data-container/blob/master/build-docker-image.sh
+  buildScript: https://github.com/HSLdevcom/OpenTripPlanner-data-container/blob/master/travis-build.sh
   runContainer: docker run -d -p 8080:8080 --name hsl-data-container hsldevcom/opentripplanner-data-container-hsl
   accessContainer: http://localhost:8080/
+  travisBuild: OpenTripPlanner-data-container
 ---
 
 ## Data flow
