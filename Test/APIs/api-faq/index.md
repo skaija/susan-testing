@@ -6,7 +6,7 @@ Table of Contents
 =================
 
 ## Routing API
-* [How to 1?](#how-to-1?)
+* [How to 1?](#how-to-1)
 * [How to 2](#how-to-2)
 * [How to find out more about QueryTypes and their fields and parameters](#how-to-find-out-more-about-querytypes-and-their-fields-and-parameters)
 
